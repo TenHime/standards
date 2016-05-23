@@ -1,0 +1,17 @@
+type,parent,id,link,title,description,img,usage
+block,,pattern,modal,Modal,,,
+item,pattern,modal,modal1,Modal 1,hihi,modal1.png,User Interface Design patterns are recurring solutions that solve common design problems.
+item,pattern,modal,modal2,Modal 2,hoho,modal2.png,
+item,pattern,modal,modal3,Modal 3,hehe,modal3.png,
+item,pattern,modal,modal4,Modal 4,haha,modal4.png,
+item,pattern,modal,modal5,Modal 5,hoho,modal5.png,
+item,pattern,modal,modal6,Modal 6,hehe,modal6.png,
+item,pattern,modal,modal7,Modal 7,haha,modal7.png,
+block,,pattern,menu,Menu,,,
+item,pattern,menu,modal1,Modal 1,hihi,modal1.png,
+item,pattern,menu,modal2,Modal 2,hoho,modal2.png,
+item,pattern,menu,modal3,Modal 3,hehe,modal3.png,
+item,pattern,menu,modal4,Modal 4,haha,modal4.png,
+item,pattern,menu,modal5,Modal 5,hoho,modal5.png,
+item,pattern,menu,modal6,Modal 6,hehe,modal6.png,
+item,pattern,menu,modal7,Modal 7,haha,modal7.png,
