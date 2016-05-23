@@ -159,3 +159,12 @@ if ($(window).width() < 768) {
 $('.active a').click(function () {
     return false;
 });
+
+
+/*-------------
+    popup
+--------------*/
+
+$('.ui.icon.button')
+  .popup()
+;

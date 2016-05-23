@@ -123,12 +123,30 @@ var typoDescription =
 var iconDescription =
     "Icon Package includes all icons of Entypo and several custom icons. Entypo is the third version of a free suite of premium quality pictograms. Each pictogram has been drawn for pixel perfection at a size of 20 x 20 pixels and a very consistent style.";
 
+/*----------------------------
+    component
+----------------------------*/
+//component > general
 
+//button > general
+var buttonDescription =
+    "Buttons are used to trigger an action. To maintain the consistency and simplicity accros Hoiio products, all action cases are covered within 4 types of button and 3 colors.";
 
+//button > standard
+var buttonStandard =
+    "Standard button are used in most use cases and it should be the first option to think of when deciding which button type to use. Many standard buttons can be placed together.";
 
+//button > primary
+var buttonPrimary =
+    "Primary buttons are used for the highest priority and strongest call to action. In form, do not use more than 1 primary button. In pages, do not place 2 primary buttons next to each other. Instead, consider other types of button based on the priority level.<br/> <strong>Color code: #008BD9 </strong>";
 
+//button > warning
+var buttonWarning =
+    "Warning button is a special case of primary button that specifically used for the action that may cause huge impact to user's database. Example: delete data, unsubscribe plan, etc.<br/> <strong>Color code: #E64333 </strong>";
 
-
+//button > link
+var buttonLink =
+    "Link buttons are used for the lowest priority or least encouraging actions such as 'Cancel', 'Clear all' or 'Select all'";
 
 
 $('[data-page="home"] #intro .tag-line').append(intro);
@@ -144,6 +162,7 @@ $('[data-page="layout"] #page > .description').append(typePage);
 $('[data-page="layout"] #card > .description').append(typeCard);
 $('[data-page="layout"] #sidebar > .description').append(typeSidebar);
 $('[data-page="layout"] #dialog > .description').append(typeDialog);
+
 //Color
 $('[data-page="color"] #main-color .description').append(colorDescription);
 $('[data-page="color"] #primary-color .description').append(colorPrimary);
@@ -156,5 +175,14 @@ $('[data-page="color"] #neutral-colors .description').append(colorNeutral);
 
 //Typo
 $('[data-page="typo"] #content > .block > .description').append(typoDescription);
+
 //Icon
 $('[data-page="icon"] #content > .block > .description').append(iconDescription);
+
+//Button
+$('[data-page="button"] #button-main .description').append(buttonDescription);
+$('[data-page="button"] #button-standard .description').append(buttonStandard);
+$('[data-page="button"] #button-primary .description').append(buttonPrimary);
+$('[data-page="button"] #button-warning .description').append(buttonWarning);
+$('[data-page="button"] #button-link .description').append(buttonLink);
+
