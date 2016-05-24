@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+
+<head id="checkbox">
+    <title>Checkbox | Hoiio Design Standards</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Page Info -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../dist/img/connected.png">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/standard.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/codeHighlighter.css">
+
+    <!-- Core JS -->
+    <script src="../dist/js/jquery.min.js"></script>
+    <script src="../dist/js/modernizr.js"></script>
+
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/semantic.min.css">
+    <script src="../dist/js/semantic.min.js"></script>
+
+</head>
+
+<body data-page="checkbox">
+
+    <!-- Loading -->
+    <div class="hexagon-loading"></div>
+
+    <!-- Overlay Menu -->
+    <nav id="menu-mobile" aria-hidden="true" aria-labelledby="mobile-toggle" role="navigation"></nav>
+
+    <!--  Header  -->
+    <header id="header">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="/standards/"><img src="../dist/img/connected.svg" alt="Hoiio Logo"></a>
+            </div>
+        </div>
+        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-mobile">
+            <div class="top-bar"></div>
+            <div class="middle-bar"></div>
+            <div class="bottom-bar"></div>
+        </button>
+    </header>
+
+    <!-- Content -->
+    <div id="content" data-align="center">
+
+        <div class="title">checkbox</div>
+        <!-- General description -->
+        <div class="block" id="button-main">
+            <p class="description" data-width="small"></p>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="block" id="checkbox">
+            <div class="title">checkbox</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName">Single checkbox</div>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="example">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Disable checkbox</div>
+                    <div class="ui disabled checkbox">
+                        <input type="checkbox" name="example"  disabled="disabled">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Vertical checkbox</div>
+                    <div class="ui form">
+                        <div class=" grouped fields">
+                            <label>How do you want to  update?</label>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Send me weekly newsletters  via email</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Call me via phone for reminder</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Text reminder SMS through register number</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Horizontal checkbox</div>
+                    <div class="ui form">
+                        <div class="inline fields">
+                            <label>Working days</label>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Mon</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Tue</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Wed</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example">
+                                    <label>Sat</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>Working days</label>
+                            <div class="inline fields">
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Mon</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Tue</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Wed</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Thu</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Fri</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>Sat</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Radio -->
+        <div class="block" id="checkbox">
+            <div class="title">Radio</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName">Single radio</div>
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Disabled radio</div>
+                    <div class="ui radio  disabled checkbox">
+                        <input type="radio" name="example"  disabled="disabled">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Vertical radio</div>
+                    <div class="ui form">
+                        <div class=" grouped fields">
+                            <label>How do you want to be picked up?</label>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>By Uber Limousine at 7:00 AM every morning</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>By Grab Bike at 5:30 PM at the Petronas office </label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>I'm going by myself</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column setItem">
+                    <div class="setName">Horizontal radio</div>
+                    <div class="ui form">
+                        <div class="inline fields">
+                            <label>Prefix code</label>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>JJ</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>PK</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>LD</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>GH</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="example">
+                                    <label>AS</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>Prefix code</label>
+                            <div class="inline fields">
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>CH</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>AF</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>EG</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>OB</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>KL</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>YN</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example">
+                                        <label>QA</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="block" id="checkbox">
+            <div class="title">Slider</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <!-- Enabled -->
+                <div class="column setItem">
+                    <div class="setName">Enabled slider</div>
+                    <div class="ui slider checkbox">
+                      <input type="checkbox" name="newsletter">
+                      <label>Accept terms and conditions</label>
+                    </div>
+                </div>
+                
+                <!-- Disabled -->
+                <div class="column setItem">
+                    <div class="setName">Disabled silder</div>
+                    <div class="ui disabled slider checkbox">
+                      <input type="checkbox" name="newsletter" disabled="disabled">
+                      <label>Accept terms and conditions</label>
+                    </div>
+                </div>
+                
+                <!-- Exclusive choice slider -->
+                <div class="column setItem">
+                    <div class="setName">Exclusive choice slider</div>
+                    <div class="ui form">
+                        <div class="grouped fields" data-width="short">
+                            <label>Outbound Throughput</label>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="radio" name="throughput" checked="checked">
+                                <label>20 mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="radio" name="throughput">
+                                <label>10mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="radio" name="throughput">
+                                <label>5mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox checked">
+                                <input type="radio" name="throughput">
+                                <label>Unmetered</label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Multiple choice slider -->
+                <div class="column setItem">
+                    <div class="setName">Multiple choice slider</div>
+                    <div class="ui form">
+                        <div class="grouped fields" data-width="short">
+                            <label>Announcement method</label>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="checkbox" name="throughput" checked="checked">
+                                <label>Morning radio</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="checkbox" name="throughput">
+                                <label>Weekly newspaper</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox">
+                                <input type="checkbox" name="throughput">
+                                <label>Monthly SMS</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui slider checkbox checked">
+                                <input type="checkbox" name="throughput">
+                                <label>Automatic call message</label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Toggle -->
+        <div class="block" id="checkbox">
+            <div class="title">Toggle</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <!-- Enabled -->
+                <div class="column setItem">
+                    <div class="setName">Enabled toggle</div>
+                    <div class="ui toggle checkbox">
+                      <input type="checkbox" name="public">
+                      <label>Subscribe to weekly newsletter</label>
+                    </div>
+                </div>
+                
+                <!-- Disabled -->
+                <div class="column setItem">
+                    <div class="setName">Disabled toggle</div>
+                    <div class="ui disabled toggle checkbox">
+                      <input type="checkbox" name="public" disabled="disabled">
+                      <label>Subscribe to weekly newsletter</label>
+                    </div>
+                </div>
+                
+                <!-- Exclusive choice toggle -->
+                <div class="column setItem">
+                    <div class="setName">Exclusive choice toggle</div>
+                    <div class="ui form">
+                        <div class="grouped fields" data-width="short">
+                            <label>Outbound Throughput</label>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="radio" name="throughput" checked="checked">
+                                <label>20 mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="radio" name="throughput">
+                                <label>10mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="radio" name="throughput">
+                                <label>5mbps max</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox checked">
+                                <input type="radio" name="throughput">
+                                <label>Unmetered</label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Multi toggle -->
+                <div class="column setItem">
+                    <div class="setName">Multiple choice toggle</div>
+                    <div class="ui form">
+                        <div class="grouped fields" data-width="short">
+                            <label>Announcement method</label>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="checkbox" name="throughput" checked="checked">
+                                <label>Morning radio</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="checkbox" name="throughput">
+                                <label>Weekly newspaper</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox">
+                                <input type="checkbox" name="throughput">
+                                <label>Monthly SMS</label>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <div class="ui toggle checkbox checked">
+                                <input type="checkbox" name="throughput">
+                                <label>Automatic call message</label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Read Only -->
+        <div class="block" id="checkbox">
+            <div class="title">Read-only</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName">Checkbox</div>
+                    <div class="ui checkbox">
+                        <input type="radio" name="example1" class="hidden">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                
+                <div class="column setItem">
+                    <div class="setName">Radio</div>
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example2" class="hidden">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                
+                <div class="column setItem">
+                    <div class="setName">Silder</div>
+                    <div class="ui slider checkbox">
+                        <input type="radio" name="example3" class="hidden">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                
+                <div class="column setItem">
+                    <div class="setName">Toggle</div>
+                    <div class="ui read-only toggle checkbox">
+                        <input type="checkbox" name="example4" class="hidden">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Custom JS -->
+<script src="../dist/js/d3.js"></script>
+<script src="../dist/js/lodash.js"></script>
+<script src="../dist/data/allData.js"></script>
+<script src="../dist/data/copy.js"></script>
+<script src="../dist/js/component.js"></script>
+</body>
+
+</html>

@@ -29,11 +29,11 @@
     margin-bottom:30px;
 }
 
-*[data-page="button"] .buttonName {
+*[data-page="button"] .setName {
     font-family: 'Karla', sans-serif;
 }
 
-*[data-page="button"] .buttonItem > .buttonName {
+*[data-page="button"] .setItem > .setName {
     margin-bottom: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -67,4 +67,91 @@
 
 .ui.buttons>.ui.button:not(.icon) > .icon{
     margin-right: 0.6rem!important;
+}
+
+
+/*------------------------
+          checkbox
+--------------------------*/
+
+*[data-page="checkbox"] #content .block > .grid[data-width="small"] {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+*[data-page="checkbox"] #content .block > .grid[data-width="medium"] {
+    max-width: 900px!important;
+    margin: 0 auto;
+}
+
+*[data-page="checkbox"] #content .block > .grid[data-width="medium"] >.column:not(:first-child):not(:nth-child(2)){
+    margin-top: 30px!important;
+}
+
+@media only screen and (max-width: 767px){
+    *[data-page="checkbox"] #content .block > .grid {
+    max-width: 500px;
+    margin: 0 auto!important;
+    }
+}
+
+*[data-page="checkbox"] #content .block > p {
+    max-width: 500px;
+    margin-bottom:30px;
+}
+
+*[data-page="checkbox"] .setName {
+    font-family: 'Karla', sans-serif;
+}
+
+*[data-page="checkbox"] .setItem > .setName {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 14.5px;
+}
+
+/*make list left aligned*/
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.form > .grouped.fields,
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.form > .inline.fields,
+*[data-page="checkbox"] #content .block > .grid:not(.one) > .column.setItem > .ui.form > .ui.field {
+    text-align: left;
+    padding-left: 10%!important;
+}
+
+/*make slider exclusively more left aligned*/
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.form > .grouped.fields[data-width="short"]{
+    padding-left: 33%!important;
+}
+
+/*for above label of inline checkbox*/
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.form > 
+.ui.field label{
+    text-align: left;
+}
+
+/*for inline label of inline checkbox*/
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.form > .inline.fields label{
+    text-align: left;
+}
+
+/*for layout slider*/
+
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .ui.checkbox + .setName {
+    margin-top: 30px;
+}
+/*-------for semantic-------*/
+
+*[data-page="checkbox"] .ui.checkbox:not(.radio):not(.toggle):not(.slider) label{
+    padding-left: 2rem;
+}
+
+*[data-page="checkbox"] .ui.radio.checkbox label{
+    padding-left: 1.9rem;
+}
+
+/*change off status color*/
+*[data-page="checkbox"] .ui.checkbox.toggle label{
+    color: #b4b4b4;
+    
 }
