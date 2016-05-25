@@ -54,28 +54,331 @@
     <!-- Content -->
     <div id="content" data-align="center">
 
-        <div class="title">Message</div>
+        <div class="title">Message Color</div>
         <!-- General description -->
-        <div class="block" id="button-main">
+        <div class="block" id="mess-type">
             <p class="description" data-width="small"></p>
         </div>
 
-        <!-- Checkbox -->
-        <div class="block" id="checkbox">
-            <div class="title">checkbox</div>
+        <!-- Normal Message -->
+        <div class="block" id="mess-normal">
+            <div class="title">Normal Message</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui two column grid" data-width="medium">
+            <div class="ui one column grid" data-width="medium">
                 <div class="column setItem">
-                    <div class="setName">Single checkbox</div>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="example">
-                        <label>Send weekly newsletters</label>
+                    <div class="setName"></div>
+                    <div class="messageBox">
+                        <div class="ui message">
+                            <div class="header">
+                                New features!
+                            </div>
+                            <div class="content">Create an account has never been easier than this! We've just simplified the structure and reduced time and effort typing every little fields.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Error Message -->
+        <div class="block" id="mess-error">
+            <div class="title">Error Message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="messageBox">
+                        <div class="ui error message">
+                            <div class="header">
+                                Database expired
+                            </div>
+                            <div class="content">Please complete the allowance before <strong>Apr 2, 2016</strong>. 
+                                <br/>Your employees will be paid on <strong>Apr 30, 2016</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Warning Message -->
+        <div class="block" id="mess-warning">
+            <div class="title">Warning Message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="messageBox">
+                        <div class="ui warning message">
+                            <div class="content">Subscription will be expired in 1 month. You can renew it from today.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Information Message -->
+        <div class="block" id="mess-info">
+            <div class="title">Information Message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="messageBox messInfo">
+                        <div class="ui info message">
+                            <div class="header">
+                                Change subscription settings
+                            </div>
+                            <div class="content">You can adjust your applications subscription setting right in your portal. Go to <strong>Settings</strong> > <strong>Subscription</strong> > <strong>Edit</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Success Message -->
+        <div class="block" id="checkbox">
+            <div class="title">Success Message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="messageBox messInfo">
+                        <div class="ui success message">
+                            <div class="header">
+                                Call Tracking V2.34X updated!
+                            </div>
+                            <div class="content">Your Call Tracking has been updated to the newest version. We fixed some minor bugs and implemented the quick import call detail feature. No more wasted time!
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     
+        <!-- Message type -->
+        <div class="title">Message type</div>
+        <!-- General description -->
+        <div class="block" id="mess-form">
+            <p class="description" data-width="small"></p>
+        </div>
+
+        <!-- Form Message -->
+        <div class="block" id="mess-form">
+            <div class="title">Standard message (Ex: in form)</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <div class="column setItem" data-position="relative">
+                    <div class="setName" data-type="for-modal">Message for a specific part</div>
+                    <!--specific part-->
+                    <div class="ui active modal" id="modal_formwarning" data-width="550">
+                        <div class="header">Staff payroll</div>
+                        <i class="close icon"></i>
+                        <div class="content">
+                            Name:<h5> Steve Van</h5>
+                            <div class="ui grid">
+                                <div class="five wide column">Based salary: <h5>300$/h</h5></div>
+                                <div class="five wide column">Overtime <h5>0$/h</h5></div>
+                                <div class="six wide column">Payrate: <h5>12$/h</h5></div>
+                            </div>
+                            <div class="ui error message">
+                                <p>Please complete the allowance before <strong>Apr 2, 2016</strong>. Your employees will be paid on <strong>Apr 30, 2016</strong>.</p>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Allowance description</label>
+                                    <input type="text" placeholder="Enter description">
+                                </div>
+                                <div class="two fields">
+                                    <div class="twelve wide field">
+                                        <label>IRBA</label>
+                                        <div class="ui fluid search selection dropdown">
+                                            <input type="hidden" name="role">
+                                            <i class="dropdown icon"></i>
+                                            <input class="search" autocomplete="off" tabindex="0">
+                                            <div class="default text">Select IRBA</div>
+                                            <div class="menu" tabindex="-1">
+                                                <div class=" item" data-value="des">National holidays</div>
+                                                <div class="item" data-value="marketing">Special days</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide field">
+                                        <label>Rate</label>
+                                        <input type="text" placeholder="Enter code">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="actions">
+                            <a class="cancel">Cancel</a>
+                            <div class="ui approve primary button">Save</div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="setName" data-type="for-modal">Message for the whole modal</div>
+                    <!--whole modal-->
+                    <div class="ui active modal" id="modal_forminform" data-width="550">
+                        <div class="header">Create an account</div>
+                        <i class="close icon"></i>
+                        <div class="content">
+                            <div class="ui message">
+                                <div class="header">New features!</div>
+                                <p>Create an account has never been easier than this! We've just simplified the structure and reduced time and effort typing every little fields.</p>
+                                <div class="ui ordered list">
+                                    <div class="item">Department code will be automatically generated.</div>
+                                    <div class="item">New roles updated.</div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Roles</label>
+                                    <div class="ui fluid search selection dropdown">
+                                        <input type="hidden" name="role">
+                                        <i class="dropdown icon"></i>
+                                        <input class="search" autocomplete="off" tabindex="0">
+                                        <div class="default text">Select role</div>
+                                        <div class="menu" tabindex="-1">
+                                            <div class=" item" data-value="ceo">CEO</div>
+                                            <div class="item" data-value="marketing">Senior Marketing Manager</div>
+                                            <div class="item" data-value="iy">IT guy</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="twelve wide field">
+                                        <label>Department</label>
+                                        <div class="ui fluid search selection dropdown">
+                                            <input type="hidden" name="role">
+                                            <i class="dropdown icon"></i>
+                                            <input class="search" autocomplete="off" tabindex="0">
+                                            <div class="default text">Select role</div>
+                                            <div class="menu" tabindex="-1">
+                                                <div class=" item" data-value="des">Design</div>
+                                                <div class="item" data-value="marketing">Marketing</div>
+                                                <div class="item" data-value="iy">IT</div>
+                                                <div class="item" data-value="sales">Sales </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide field">
+                                        <label>Code</label>
+                                        <input type="text" placeholder="Enter code">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="actions">
+                            <a class="cancel">Cancel</a>
+                            <div class="ui approve primary button">Save</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner Message -->
+        <div class="block" id="mess-banner">
+            <div class="title">Page banner message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- Banner warning -->
+                <div class="column setItem">
+                    <div class="setName">Only text</div>
+                    <div class="bannerBox">
+                        <div class="ui banner warning message">
+                           <i class="remove icon"></i>
+                           <p><strong>MAINTENANCE COMING SOON!</strong> We will close the server for weekly maintainance. Save your work to avoid losing any information. It's time for a cup of coffee.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Banner info -->
+                <div class="column setItem">
+                    <div class="setName">With icon & link</div>
+                    <div class="bannerBox">
+                        <div class="ui banner info message">
+                           <i class="remove icon"></i>
+                           <p><i class="publish icon"></i>NEW UPDATE: We've just upgraded the Email Marketing server for faster response performance. <a>See other update details</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Popup Message -->
+        <div class="block" id="mess-popup">
+            <div class="title">Popup message</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium" >
+                <div class="column setItem" >
+                    <div class="setName">With link button</div>
+                    <div class="popupBox" data-type="popup">
+                        <div class="ui success message" data-type="popup">
+                           <i class="remove icon"></i>
+                           <div class="header">Delete item successfully</div>
+                           <p>'C.C Lemon Customer 2016' is deleted. In case you want to restore it, visit <strong>'Archive list'</strong>.
+                           </p>
+                            <a class="cancel">Go to archive list</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Message Variation -->
+        <div class="title">Message Variation</div>
+        <!-- General description -->
+        <div class="block" id="mess-form">
+            <p class="description" data-width="small"></p>
+        </div>
+        
+        <!-- With icon -->
+        <div class="block" id="mess-popup">
+            <div class="title">with icon</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium" >
+                <!-- standard mess -->
+                <div class="column setItem" >
+                    <div class="setName">Standard Message</div>
+                    <div class="messageBox">
+                        <div class="ui icon message">
+                          <i class="inbox icon"></i>
+                          <div class="content">
+                            <div class="header">
+                              Have you heard about our mailing list?
+                            </div>
+                            <p>Get the best news in your e-mail every day.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Banner mess -->
+                <div class="column setItem">
+                    <div class="setName">Banner Message</div>
+                    <div class="bannerBox">
+                        <div class="ui banner error message">
+                            <p><i class="uninstall icon"></i> Opps, you are using an old version of the app which may cause extreme errors.</p></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
 
     <!-- Footer -->
