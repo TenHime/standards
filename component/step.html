@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head id="step">
+    <title>Image | Hoiio Design Standards</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Page Info -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../dist/img/connected.png">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/standard.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/codeHighlighter.css">
+
+    <!-- Core JS -->
+    <script src="../dist/js/jquery.min.js"></script>
+    <script src="../dist/js/modernizr.js"></script>
+
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/semantic.min.css">
+    <script src="../dist/js/semantic.min.js"></script>
+
+</head>
+
+<body data-page="step">
+
+    <!-- Loading -->
+    <div class="hexagon-loading"></div>
+
+    <!-- Overlay Menu -->
+    <nav id="menu-mobile" aria-hidden="true" aria-labelledby="mobile-toggle" role="navigation"></nav>
+
+    <!--  Header  -->
+    <header id="header">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="/standards/"><img src="../dist/img/connected.svg" alt="Hoiio Logo"></a>
+            </div>
+        </div>
+        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-mobile">
+            <div class="top-bar"></div>
+            <div class="middle-bar"></div>
+            <div class="bottom-bar"></div>
+        </button>
+    </header>
+
+    <!-- Content -->
+    <div id="content" data-align="center">
+
+        <div class="title">Step</div>
+        <!-- General description -->
+        <div class="block" id="step-main">
+            <p class="description" data-width="small"></p>
+        </div>
+
+        <!-- odered step -->
+        <div class="block" id="step-ordered">
+            <div class="title">ordered steps</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable one column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui ordered steps">
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+
+        <!-- icon step -->
+        <div class="block" id="step-icon">
+            <div class="title">Icon steps</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui steps">
+                        <div class="completed step">
+                            <i class="shopping cart icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="active step">
+                            <i class="credit card icon"></i>
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <i class="mail icon"></i>
+                            <div class="content">
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Check your email</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- Stage -->
+        <div class="title">Step stage</div>
+        <!-- General description -->
+        <div class="block" id="step-stage">
+            <p class="description" data-width="small"></p>
+        </div>
+        
+        <!-- next/default step -->
+        <div class="block" id="step-default">
+            <div class="title">default</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="small">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui steps">
+                        <div class="step">
+                            <i class="shopping cart icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- active step -->
+        <div class="block" id="step-active">
+            <div class="title">active</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="small">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui steps">
+                        <div class="active step">
+                            <i class="shopping cart icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- completed step -->
+        <div class="block" id="step-completed">
+            <div class="title">completed</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="small">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui steps">
+                        <div class="completed step">
+                            <i class="shopping cart icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- disabled step -->
+        <div class="block" id="step-disabled">
+            <div class="title">disabled</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="small">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui steps">
+                        <div class="disabled step">
+                            <i class="shopping cart icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+         <!-- Variation -->
+        <div class="title">Step variation</div>
+        <!-- General description -->
+        <div class="block" id="step-variation">
+            <p class="description" data-width="small"></p>
+        </div>
+        
+        <!-- stackable step -->
+        <div class="block" id="step-stackable">
+            <div class="title">Stackable</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui stackable ordered steps">
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- description -->
+        <div class="block" id="step-desc">
+            <div class="title">Description</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- with desc -->
+                <div class="column setItem">
+                    <div class="setName">With description</div>
+                    <div class="ui ordered steps">
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+                
+                <!-- without desc -->
+                <div class="column setItem">
+                    <div class="setName">Without description</div>
+                    <div class="ui ordered steps">
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Custom JS -->
+<script src="../dist/js/d3.js"></script>
+<script src="../dist/js/lodash.js"></script>
+<script src="../dist/data/allData.js"></script>
+<script src="../dist/data/copy.js"></script>
+<script src="../dist/js/component.js"></script>
+</body>
+
+</html>

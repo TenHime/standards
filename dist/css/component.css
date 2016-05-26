@@ -653,39 +653,348 @@ strong{
 /*------------------------
          DROPDOWN
 --------------------------*/
-*[data-page="input"] #content .block > .grid[data-width="small"] {
+*[data-page="dropdown"] #content .block > .grid[data-width="small"] {
     max-width: 500px;
     margin: 0 auto;
 }
 
-*[data-page="input"] #content .block > .grid[data-width="medium"] {
+*[data-page="dropdown"] #content .block > .grid[data-width="medium"] {
     max-width:900px!important;
     margin: 0 auto;
 }
 
 
 @media only screen and (max-width: 767px){
-    *[data-page="input"] #content .block > .grid {
+    *[data-page="dropdown"] #content .block > .grid {
     max-width: 500px;
     margin: 0 auto!important;
     }
 }
 
-*[data-page="input"] #content .block > p {
+*[data-page="dropdown"] #content .block > p {
     max-width: 500px;
     margin-bottom:30px;
 }
 
-*[data-page="input"] .setName {
+*[data-page="dropdown"] .setName {
     font-family: 'Karla', sans-serif;
 }
 
-*[data-page="input"] .setItem > .setName {
+*[data-page="dropdown"] .setItem > .setName {
     margin-bottom: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 14.5px;
 }
 
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.selection.dropdown[data-width="medium"]{
+    width: 250px;
+    vertical-align: middle;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.selection.dropdown[data-width="large"]{
+    width: 300px;
+    vertical-align: middle;
+}
+
 
 /*------semantic------*/
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .header > .ui.circular.empty.label {
+    margin-right: .370370rem;
+    font-size: 0.8rem!important;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .item > .ui.circular.empty.label {
+    margin-right: .740740rem!important;
+    font-size: 0.8rem!important;
+}
+
+*[data-page="dropdown"]    .ui.label[data-type="number"]{
+    margin-left: 0.7rem;
+    display: inline-block;
+    font-size: 0.851851rem!important;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .item[data-type="below_desc"] > .title {
+    margin-bottom: 0.518518rem;
+    font-family: 'Poppins';
+    font-size: 1rem!important;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .item[data-type="below_desc"] > .information {
+    font-size: 0.925925rem;
+    color: #767676;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .active.item[data-type="below_desc"] > .information {
+    font-weight: 500;
+    color: #414141;
+}
+
+/*restyle active*/
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .active.item[data-type="below_desc"] > .information {
+    font-weight: 500;
+    color: #414141;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu[data-type="has-message"] > .ui.message {
+    margin-bottom: 0!important;
+    width: 300px;
+    white-space: normal;
+}
+/*-- end restyle active --*/
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu[data-type="has-message"]{
+    padding-bottom: 0!important;
+}
+
+/*inline dropdown*/
+*[data-page="dropdown"] .ui.inline.dropdown > .text {
+    font-weight: 600;
+}
+
+*[data-page="dropdown"]  .ui.inline.dropdown {
+    margin-left: 0;
+    padding-left: 0.3rem;
+}
+/*-- end inline dropdown --*/
+
+/*------------------------
+          label
+--------------------------*/
+
+*[data-page="label"] #content .block > .grid[data-width="small"] {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+*[data-page="label"] #content .block > .grid[data-width="medium"] {
+    max-width: 700px!important;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 767px){
+    *[data-page="label"] #content .block > .grid {
+    max-width: 500px;
+    margin: 0 auto!important;
+    }
+}
+
+*[data-page="label"] #content .block > p {
+    max-width: 500px;
+    margin-bottom:30px;
+}
+
+*[data-page="label"] .setName {
+    font-family: 'Karla', sans-serif;
+}
+
+*[data-page="label"] .setItem > .setName {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 14.5px;
+}
+
+*[data-page="label"] .ui.circular.empty.label[data-spacing="medium"] {
+    margin-left: 1.5rem;
+}
+
+/*-- semantic --*/
+
+*[data-page="label"] .ui.label > .detail{
+    font-weight: 600;
+}
+
+*[data-page="label"] .ui.label > img + .detail{
+    font-weight: 400;
+    vertical-align: middle;
+    color: white;
+    opacity: 1;
+}
+
+/*-- avatar label --*/
+*[data-page="label"] .ui.label[data-type="user-avatar-detail"] {
+    font-weight: 600;
+    vertical-align: middle!important;
+}
+
+*[data-page="label"] .ui.label[data-type="user-avatar-detail"] > .detail{
+    background:  rgba(0,0,0,.1);
+    padding: 0.38rem .8rem 0.4rem 0.8rem!important;
+    margin: -2.2rem -.933rem -2.1rem .5rem!important;
+    border-top-right-radius: .2962963rem;
+    border-bottom-right-radius: .2962963rem;
+}
+
+*[data-page="label"] .ui.label[data-type="user-avatar"] img {
+    width: 1.7rem!important;
+    height: 1.7rem!important;
+}
+
+*[data-page="label"] .ui.label[data-type="user-avatar"] {
+    padding: .274rem .833rem !important;
+}
+/*-- end avatar label --*/
+
+/*-- link label --*/
+*[data-page="label"] .ui.label a.detail {
+    font-weight: 400;
+}
+/*-- end link label --*/
+
+/*------------------------
+          image
+--------------------------*/
+
+*[data-page="image"] #content .block > .grid[data-width="small"] {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+*[data-page="image"] #content .block > .grid[data-width="medium"] {
+    max-width: 700px!important;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 767px){
+    *[data-page="image"] #content .block > .grid {
+    max-width: 500px;
+    margin: 0 auto!important;
+    }
+}
+
+*[data-page="image"] #content .block > p {
+    max-width: 500px;
+    margin-bottom:30px;
+}
+
+*[data-page="image"] .setName {
+    font-family: 'Karla', sans-serif;
+}
+
+*[data-page="image"] .setItem > .setName {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 14.5px;
+}
+
+/*-- semantic --*/
+.ui.avatar.big.image{
+    width: 5.333rem;
+    height: 5.33rem;
+}
+
+.ui.app.image{
+    width: 2.286rem;
+    height: 2.286rem;
+    display: inline-block;
+}
+
+.ui.app.big.image{
+    width: 5.333rem;
+    height: 5.33rem;
+}
+
+
+/*------------------------
+          step
+--------------------------*/
+
+*[data-page="step"] #content .block > .grid[data-width="small"] {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+*[data-page="step"] #content .block > .grid[data-width="medium"] {
+    max-width: 900px!important;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 767px){
+    *[data-page="step"] #content .block > .grid {
+    max-width: 500px;
+    margin: 0 auto!important;
+    }
+}
+
+*[data-page="step"] #content .block > p {
+    max-width: 500px;
+    margin-bottom:30px;
+}
+
+*[data-page="step"] .setName {
+    font-family: 'Karla', sans-serif;
+}
+
+*[data-page="step"] .setItem > .setName {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 14.5px;
+}
+
+/*-- semantic --*/
+/*General*/
+.ui.steps{
+    margin-bottom:1.851851rem;/*20*/
+    overflow:hidden;
+}
+
+.ui.steps > .step{
+    text-align: left;
+}
+
+.ui.steps >.step>.content>.title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ui.steps >.step>.content>.description{
+    font-size:0.851851rem; /*11.5*/
+    margin-top:.2rem!important;
+}
+
+.ui.small.steps{
+    padding:0!important;
+    height: 40px;
+}
+
+
+/*Icon*/
+.ui.steps >.step i{
+   font-size: 1.8rem!important;
+    margin-right: 1rem!important;
+}
+
+.ui.steps >.active.step i{
+    color: #008BD9!important;
+}
+
+/*Number in ordered steps*/
+.ui.ordered.steps >.step:first-child{
+    padding-left: 1.7rem!important;
+}
+
+.ui.ordered.steps >.step:before{
+    font-size: 1.925925rem;
+    margin-right: 1.3rem;
+}
+
+/*Active step*/
+.ui.ordered.steps>.active.step:before{
+    color: #008BD9!important;
+}
+
+.ui.steps>.active.step:after{
+   background: #fcfcfc!important;
+}
+
+.ui.steps>.active.step{
+    background: #fcfcfc!important;
+}

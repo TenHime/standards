@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+
+<head id="label">
+    <title>Label | Hoiio Design Standards</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Page Info -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../dist/img/connected.png">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/standard.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/codeHighlighter.css">
+
+    <!-- Core JS -->
+    <script src="../dist/js/jquery.min.js"></script>
+    <script src="../dist/js/modernizr.js"></script>
+
+    <!-- Semantic -->
+    <link rel="stylesheet" type="text/css" href="../dist/css/semantic.min.css">
+    <script src="../dist/js/semantic.min.js"></script>
+
+</head>
+
+<body data-page="label">
+
+    <!-- Loading -->
+    <div class="hexagon-loading"></div>
+
+    <!-- Overlay Menu -->
+    <nav id="menu-mobile" aria-hidden="true" aria-labelledby="mobile-toggle" role="navigation"></nav>
+
+    <!--  Header  -->
+    <header id="header">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="/standards/"><img src="../dist/img/connected.svg" alt="Hoiio Logo"></a>
+            </div>
+        </div>
+        <button class="ui button mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-mobile">
+            <div class="top-bar"></div>
+            <div class="middle-bar"></div>
+            <div class="bottom-bar"></div>
+        </button>
+    </header>
+
+    <!-- Content -->
+    <div id="content" data-align="center">
+
+        <div class="title">Label</div>
+        <!-- General description -->
+        <div class="block" id="label-main">
+            <p class="description" data-width="small"></p>
+        </div>
+
+        <!-- Label default -->
+        <div class="block" id="label-default">
+            <div class="title">Color</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable five column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui label">label</div>
+                </div>
+                <!-- End -->
+                
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Option 1</div>
+                    <div class="ui error label">label</div>
+                </div>
+                <!-- End -->
+                
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Option 2</div>
+                    <div class="ui info label">label</div>
+                </div>
+                <!-- End -->
+                
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Option 3</div>
+                    <div class="ui success label">label</div>
+                </div>
+                <!-- End -->
+                
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Option 4</div>
+                    <div class="ui warning label">label</div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+
+        <!-- Label usage -->
+        <div class="block" id="label-usage">
+            <div class="title">Usage</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable five column grid" data-width="medium">
+                <!-- Total quantity -->
+                <div class="column setItem">
+                    <div class="setName">Quantity</div>
+                    <div class="ui label">11</div>
+                    <div class="ui label">9 of 11</div>
+                </div>
+                <!-- End -->
+                
+                <!-- selected quantity -->
+                <div class="column setItem">
+                    <div class="setName">Urgent status</div>
+                    <div class="ui error label">Expired</div>
+                </div>
+                <!-- End -->
+                
+                <!-- Type tag -->
+                <div class="column setItem">
+                    <div class="setName">Type tag</div>
+                    <div class="ui info label">Sales
+                    </div>
+                </div>
+                <!-- End -->
+                
+                <!-- User tag -->
+                <div class="column setItem">
+                    <div class="setName">User tag</div>
+                    <div class="ui success label" data-type="user-avatar">
+                        <img class="ui avatar image" src="../dist/img/avatar/ava_10.jpg">
+                        Sami
+                    </div>
+                </div>
+                <!-- End -->
+                
+                <!-- Status -->
+                <div class="column setItem">
+                    <div class="setName">Normal status</div>
+                    <div class="ui warning circular empty label" data-variation="inverted" data-content="Pending" data-position="top center"></div>
+                </div>
+                <!-- End -->
+                
+            </div>
+        </div>
+        
+        <!-- Variation -->
+        <div class="title">label Variation</div>
+        <!-- General description -->
+        <div class="block" id="label-variation">
+            <p class="description" data-width="small"></p>
+        </div>
+
+        <!-- dot -->
+        <div class="block" id="label-dot">
+            <div class="title">dot label</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable five column grid" data-width="medium">
+                <!-- offline -->
+                <div class="column setItem">
+                    <div class="setName">Offline</div>
+                    <div class="ui circular empty label" data-variation="inverted" data-content="Offline" data-position="top center" ></div>
+                </div>
+                <!-- End -->
+                
+                <!-- error -->
+                <div class="column setItem">
+                    <div class="setName">Error</div>
+                    <div class="ui error circular empty label" data-variation="inverted" data-content="Offline/Expired/Missed" data-position="top center"></div>
+                </div>
+                <!-- End -->
+                
+                <!-- info -->
+                <div class="column setItem">
+                    <div class="setName">Inform</div>
+                    <div class="ui info circular empty label" data-variation="inverted" data-content="Confirmed" data-position="top center"></div>
+                </div>
+                <!-- End -->
+                
+                <!-- success -->
+                <div class="column setItem">
+                    <div class="setName">Online</div>
+                    <div class="ui success circular empty label" data-variation="inverted" data-content="Online" data-position="top center"></div>
+                </div>
+                <!-- End -->
+                
+                <!-- warning -->
+                <div class="column setItem">
+                    <div class="setName">Status stages</div>
+                    <div class="ui warning circular empty label" data-variation="inverted" data-content="Pending" data-position="top center"></div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- title & number -->
+        <div class="block" id="label-titlenumber">
+            <div class="title">Title & number</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- default -->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui label">
+                        Communication group
+                        <div class="detail">214 staffs</div>
+                    </div>
+                </div>
+                <!-- End -->
+                
+                <!-- icon -->
+                <div class="column setItem">
+                    <div class="setName">With icon</div>
+                    <div class="ui label">
+                        <i class="ui star icon"></i>
+                        Starred files
+                        <div class="detail">214</div>
+                    </div>
+                </div>
+                <!-- End -->
+                
+            </div>
+        </div>
+        
+        <!-- avatar -->
+        <div class="block" id="label-avatar">
+            <div class="title">Avatar</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- ava default -->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui label" data-type="user-avatar">
+                        <img class="ui avatar image" src="../dist/img/avatar/ava_10.jpg">
+                        Sami Kumar
+                    </div>
+                </div>
+                <!-- End -->
+                
+                <!-- ava detail -->
+                <div class="column setItem">
+                    <div class="setName">With details</div>
+                    <div class="ui info label" data-type="user-avatar-detail">
+                        <img class="ui avatar image" src="../dist/img/avatar/ava_9.jpg">
+                        Xavier Josh
+                        <div class="detail">Engineer</div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- link -->
+        <div class="block" id="label-link">
+            <div class="title">Link</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- label as link -->
+                <div class="column setItem">
+                    <div class="setName">Label as link</div>
+                    <a class="ui label">
+                        <i class="mail icon"></i> Mail
+                    </a>
+                </div>
+                <!-- End -->
+                
+                <!-- has links -->
+                <div class="column setItem">
+                    <div class="setName">Contain link</div>
+                    <div class="ui info label" >
+                        <i class="mail icon"></i> 22
+                        <a class="detail">View emails</a>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Custom JS -->
+<script src="../dist/js/d3.js"></script>
+<script src="../dist/js/lodash.js"></script>
+<script src="../dist/data/allData.js"></script>
+<script src="../dist/data/copy.js"></script>
+<script src="../dist/js/component.js"></script>
+</body>
+
+</html>

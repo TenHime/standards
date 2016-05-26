@@ -61,45 +61,53 @@
         </div>
 
         <!-- Default input -->
-        <div class="block" id="input-standard">
-            <div class="title">Standard input</div>
+        <div class="block" id="input-dropdown">
+            <div class="title">Dropdown</div>
             <p class="description" data-width="small"></p>
             
             <div class="ui three column grid" data-width="medium">
+                <!-- Default -->
                 <div class="column setItem">
                     <div class="setName">Defaut</div>
                     <div class="ui input">
-                      <input type="text" placeholder="Type your first name">
+                      <input type="text" placeholder="Type your name">
                     </div>
                 </div>
+                
+                <!-- Disabled -->
                 <div class="column setItem">
-                    <div class="setName">Disabled input</div>
+                    <div class="setName">Disabled</div>
                     <div class="ui disabled input">
-                      <input type="text" placeholder="Type your first name">
+                      <input type="text" placeholder="Type your name">
                     </div>
                 </div>
+                
+                <!-- Loading -->
                 <div class="column setItem">
-                    <div class="setName">Loading input</div>
+                    <div class="setName">Loading</div>
                     <div class="ui icon loading input">
-                      <input type="text" placeholder="Type your first name">
+                      <input type="text" placeholder="Type your name">
                         <i class="search icon"></i>
                     </div>
                 </div>
+                
             </div>
         </div>
         
-        <!-- Error input -->
+        <!-- Error -->
         <div class="block" id="input-error">
             <div class="title">Error input</div>
             <p class="description" data-width="small"></p>
             
             <div class="ui one column grid" data-width="medium">
+                <!-- Default -->
                 <div class="column setItem">
-                    <div class="setName">Error input</div>
+                    <div class="setName">Default</div>
                     <div class="ui error input">
-                      <input type="text" placeholder="Type your first name">
+                      <input type="text" placeholder="Type your name">
                     </div>
                 </div>
+                <!-- End -->
             </div>
         </div>
         
@@ -200,9 +208,9 @@
                             <i class="dropdown icon"></i>
                             <div class="text">+84</div>
                             <div class="menu">
-                                <div class="item">+65</div>
-                                <div class="item">+84</div>
-                                <div class="item">+33</div>
+                                <div class="item" data-value="0">+65</div>
+                                <div class="item" data-value="1">+84</div>
+                                <div class="item" data-value="2">+33</div>
                             </div>
                         </div>
                         <input type="text" placeholder="Phone number">
@@ -218,9 +226,9 @@
                             <i class="dropdown icon"></i>
                             <div class="text">.com</div>
                             <div class="menu">
-                                <div class="item">.com</div>
-                                <div class="item">.net</div>
-                                <div class="item">.org</div>
+                                <div class="item" data-value="0">.com</div>
+                                <div class="item" data-value="1">.net</div>
+                                <div class="item" data-value="2">.org</div>
                             </div>
                         </div>
                     </div>
@@ -244,9 +252,9 @@
                             <i class="dropdown icon"></i>
                             <div class="text">Home</div>
                             <div class="menu">
-                                <div class="item">Work</div>
-                                <div class="item">Personal</div>
-                                <div class="item">Mobile</div>
+                                <div class="item" data-value="0">Work</div>
+                                <div class="item" data-value="1">Personal</div>
+                                <div class="item" data-value="2">Mobile</div>
                             </div>
                         </div>
                     </div>

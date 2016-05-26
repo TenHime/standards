@@ -84,6 +84,10 @@ $(document).ready(function () {
     // Standard
     $('.ui.dropdown').dropdown();
 
+    $('.ui.dropdown').dropdown({
+        allowAdditions: true
+    });
+
 
     $('.ui.label').popup();
 
@@ -168,5 +172,6 @@ $('.active a').click(function () {
 $('.ui.icon.button')
   .popup()
 ;
+
 
 

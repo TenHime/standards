@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 
-<head id="input">
-    <title>Input | Hoiio Design Standards</title>
+<head id="dropdown">
+    <title>Dropdown | Hoiio Design Standards</title>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -29,7 +29,7 @@
 
 </head>
 
-<body data-page="input">
+<body data-page="dropdown">
 
     <!-- Loading -->
     <div class="hexagon-loading"></div>
@@ -54,261 +54,805 @@
     <!-- Content -->
     <div id="content" data-align="center">
 
-        <div class="title">Input</div>
+        <div class="title">Dropdown</div>
         <!-- General description -->
-        <div class="block" id="input-main">
+        <div class="block" id="dropdown-main">
             <p class="description" data-width="small"></p>
         </div>
 
-        <!-- Default input -->
-        <div class="block" id="input-standard">
-            <div class="title">Standard input</div>
+        <!-- Dropdown -->
+        <div class="block" id="dropdown-dropdown">
+            <div class="title">Dropdown</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui three column grid" data-width="medium">
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- Default-->
                 <div class="column setItem">
-                    <div class="setName">Defaut</div>
-                    <div class="ui input">
-                      <input type="text" placeholder="Type your first name">
+                    <div class="setName">Default</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Actions</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">Save</div>
+                            <div class="item">Export</div>
+                            <div class="item">Delete</div>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Disableed -->
                 <div class="column setItem">
-                    <div class="setName">Disabled input</div>
-                    <div class="ui disabled input">
-                      <input type="text" placeholder="Type your first name">
+                    <div class="setName">Disabled</div>
+                    <div class="ui disabled dropdown button">
+                        Actions
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">Save</a>
+                            <a href="#" class="item">Export</a>
+                            <a href="#" class="item">Delete</a>
+                        </div>
                     </div>
                 </div>
-                <div class="column setItem">
-                    <div class="setName">Loading input</div>
-                    <div class="ui icon loading input">
-                      <input type="text" placeholder="Type your first name">
-                        <i class="search icon"></i>
-                    </div>
-                </div>
+                <!-- End -->
             </div>
         </div>
         
-        <!-- Error input -->
-        <div class="block" id="input-error">
-            <div class="title">Error input</div>
+        <!-- Selection -->
+        <div class="block" id="dropdown-selection">
+            <div class="title">Default Selection</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui one column grid" data-width="medium">
+            <div class="ui stackable three column grid" data-width="medium">
+                <!-- Default -->
                 <div class="column setItem">
-                    <div class="setName">Error input</div>
-                    <div class="ui error input">
-                      <input type="text" placeholder="Type your first name">
+                    <div class="setName">Default</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <div class="text"> Type of order</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="drinks">Drinks</div>
+                            <div class="item active selected" data-value="snacks">Snacks</div>
+                            <div class="item" data-value="fast">Fastfood</div>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Disabled -->
+                <div class="column setItem">
+                    <div class="setName">Disabled</div>
+                    <div class="ui disabled selection dropdown">
+                        <input type="hidden" name="gender">
+                        <div class="text"> Type of order</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="drinks">Drinks</div>
+                            <div class="item active selected" data-value="snacks">Snacks</div>
+                            <div class="item" data-value="fast">Fastfood</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loading -->
+                <div class="column setItem">
+                    <div class="setName">Loading</div>
+                    <div class="ui loading selection dropdown">
+                        <input type="hidden" name="gender">
+                        <div class="text">Snacks</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="drinks">Drinks</div>
+                            <div class="item active selected" data-value="snacks">Snacks</div>
+                            <div class="item" data-value="fast">Fastfood</div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         
-        <!-- Input variation -->
-        <div class="title">Input Variation</div>
+        <!-- Search selection -->
+        <div class="block" id="dropdown-search-selection">
+            <div class="title">Search</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- Search selection -->
+                <div class="column setItem">
+                    <div class="setName">In selection</div>
+                    <div class="ui search selection dropdown">
+                        <input type="hidden" name="brand">
+                        <i class="dropdown icon"></i>
+                        <input class="search" autocomplete="off" tabindex="0">
+                        <div class="default text">Type of order</div>
+                        <div class="menu">
+                            <div class="item" data-value="drinks">Drinks</div>
+                            <div class="item" data-value="snacks">Snacks</div>
+                            <div class="item" data-value="fast">Fastfood</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search dropdown -->
+                <div class="column setItem">
+                    <div class="setName">In dropdown</div>
+                    <div class="ui dropdown button">
+                        Actions
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="ui icon search input">
+                                <i class="search icon"></i>
+                                <input type="text" placeholder="Search" tabindex="0">
+                            </div>
+                            <div class="divider"></div>
+                            <a href="#" class="item">Save</a>
+                            <a href="#" class="item">Export</a>
+                            <a href="#" class="item">Delete</a>
+                            <a href="#" class="item">Duplicate</a>
+                            <a href="#" class="item">Rename</a>
+                            <a href="#" class="item">Share</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- Multiple selection -->
+        <div class="block" id="dropdown-search-selection">
+            <div class="title">Multiple selection</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- Search selection -->
+                <div class="column setItem">
+                    <div class="setName">With search selection</div>
+                    <div class="ui multiple search selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <input class="search" autocomplete="off" tabindex="0">
+                        <div class="default text">Select country</div>
+                        <div class="menu">
+                            <div class="item" data-value="us">United States</div>
+                            <div class="item" data-value="ca">Canada</div>
+                            <div class="item" data-value="vn">Vietnam</div>
+                            <div class="item" data-value="jp">Japan</div>
+                            <div class="item" data-value="kr">Korea</div>
+                            <div class="item" data-value="cn">China</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search dropdown -->
+                <div class="column setItem">
+                    <div class="setName">Only selection</div>
+                    <div class="ui multiple selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Select country</div>
+                        <div class="menu">
+                            <div class="item" data-value="us">United States</div>
+                            <div class="item" data-value="ca">Canada</div>
+                            <div class="item" data-value="vn">Vietnam</div>
+                            <div class="item" data-value="jp">Japan</div>
+                            <div class="item" data-value="kr">Korea</div>
+                            <div class="item" data-value="cn">China</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- Manually add item -->
+        <div class="block" id="dropdown-add">
+            <div class="title">Manually add new item</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- in single selection -->
+                <div class="column setItem">
+                    <div class="setName">In single selection</div>
+                    <div class="ui search selection dropdown addtions" data-width="large">
+                        <input name="tag" type="hidden">
+                        <div class="default text">Select staff group</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="0">Sales</div>
+                            <div class="item" data-value="1">Communication</div>
+                            <div class="item" data-value="2">Marketing</div>
+                            <div class="item" data-value="3">CEO</div>
+                            <div class="item" data-value="4">Designer</div>
+                            <div class="item" data-value="5">Engineer</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- in multiple selection -->
+                <div class="column setItem">
+                    <div class="setName">In multiple selection</div>
+                    <div class="ui multiple search selection dropdown addtions" data-width="large">
+                        <input name="tags" type="hidden">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Select staff group</div>
+                        <div class="menu">
+                            <div class="item" data-value="0">Sales</div>
+                            <div class="item" data-value="1">Communication</div>
+                            <div class="item" data-value="2">Marketing</div>
+                            <div class="item" data-value="3">CEO</div>
+                            <div class="item" data-value="4">Designer</div>
+                            <div class="item" data-value="5">Engineer</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+            </div>
+        </div>
+        
+        <!-- Multiple level dropdown -->
+        <div class="block" id="dropdown-search-selection">
+            <div class="title">Multi level dropdown</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable one column grid" data-width="medium">
+                <!-- Search selection -->
+                <div class="column setItem">
+                    <div class="setName">In dropdown</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Multi level menu</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">Level 1</div>
+                            <div class="item">
+                                <i class="dropdown icon"></i>
+                                Level 2
+                                <div class="menu">
+                                    <div class="item">Level 2a</div>
+                                    <div class="item">Level 2b</div>
+                                    <div class="item">Level 2c</div>
+                                    <div class="item">Level 2d</div>
+                                </div>
+                            </div>
+                            <div class="item">Level 3</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+            </div>
+        </div>
+        
+        <div class="title">Dropdown variation</div>
         <!-- General description -->
-        <div class="block" id="input-variation">
+        <div class="block" id="dropdown-variation">
             <p class="description" data-width="small"></p>
         </div>
-
-        <!-- Icon input -->
-        <div class="block" id="input-icon">
-            <div class="title">Icon</div>
+        
+        <!-- Header -->
+        <div class="block" id="dropdown-header">
+            <div class="title">Header</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- header default -->
+                <div class="column setItem">
+                    <div class="setName">Default</div>
+                    <div class="ui dropdown button">
+                        Select document
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">Starred </div>
+                            <a href="" class="item">Say yes, not No.</a>
+                            <div class="header">Shared</div>
+                            <a href="" class="item">Sprint</a>
+                            <a href="" class="item">Don't make me think</a>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- header divider -->
+                <div class="column setItem">
+                    <div class="setName">With divider</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Select document</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">Starred </div>
+                            <div class="divider"></div>
+                            <div class="item">Say yes, not No.</div>
+                            <div class="divider"></div>
+                            <div class="header">Shared</div>
+                            <div class="divider"></div>
+                            <div href="" class="item">Sprint</div>
+                            <div href="" class="item">Don't make me think</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+            </div>
+        </div>
+        
+        <!-- Icon -->
+        <div class="block" id="dropdown-icon">
+            <div class="title">icon item</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- icon item -->
+                <div class="column setItem">
+                    <div class="setName">In dropdown item</div>
+                    <div class="ui dropdown button">
+                        Account settings
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="" class="item">
+                                <i class="save icon"></i>Save as
+                            </a>
+                            <a href="" class="item">
+                                <i class="copy icon"></i>Make a copy
+                            </a>
+                            <a href="" class="item">
+                                <i class="trash icon"></i>Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- icon header -->
+                <div class="column setItem">
+                    <div class="setName">In item header</div>
+                    <div class="ui dropdown button">
+                        Select document
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">
+                                <i class="star icon"></i>Starred
+                            </div>
+                            <a href="" class="item"> Say yes, not No.</a>
+                            <div class="header">
+                                <i class="share icon"></i>Shared
+                            </div>
+                            <a href="" class="item">Sprint</a>
+                            <a href="" class="item">Don't make me think</a>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+            </div>
+        </div>
+        
+        <!-- type label -->
+        <div class="block" id="dropdown-label-normal">
+            <div class="title">Type label</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- item -->
+                <div class="column setItem">
+                    <div class="setName">In dropdown item</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Select status</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">
+                                <div class="ui success circular empty label"></div>Active
+                            </div>
+                            <div class="item">
+                                <div class="ui warning circular empty label"></div>Pending
+                            </div>
+                            <div class="item">
+                                <div class="ui error circular empty label"></div>Deactive
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- in header -->
+                <div class="column setItem">
+                    <div class="setName">In item header</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Select document</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">
+                                <div class="ui warning circular empty label"></div> Starred
+                            </div>
+                            <div class="divider"></div>
+                            <div class="item">Say yes, not No.</div>
+                            <div class="divider"></div>
+                            <div class="header">
+                                <div class="ui info circular empty label"></div>
+                                Shared
+                            </div>
+                            <div class="divider"></div>
+                            <div class="item">Sprint</div>
+                            <div class="item">Don't make me think</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+            </div>
+        </div>
+        
+        <!-- quantity label -->
+        <div class="block" id="dropdown-label-number">
+            <div class="title">Quantity label</div>
             <p class="description" data-width="small"></p>
             
             <div class="ui two column grid" data-width="medium">
-                <!-- Right aligned icon -->
+                <!-- item -->
                 <div class="column setItem">
-                    <div class="setName">Left-aligned icon</div>
-                    <div class="ui icon input">
-                      <input type="text" placeholder="Type your first name">
-                        <i class="search icon"></i>
+                    <div class="setName">In dropdown item</div>
+                    <div class="ui stackable dropdown button">
+                        Select staff group
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">
+                                Sales
+                                <div class="ui label" data-type="number">22</div>
+                            </div>
+                            <div class="item">
+                                Communication
+                                <div class="ui label" data-type="number">22</div>
+                            </div>
+                            <div class="item">
+                                Marketing
+                                <div class="ui label" data-type="number">22</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+               <!-- End -->
                 
-                <!-- Left aligned icon -->
+                <!-- in header -->
                 <div class="column setItem">
-                    <div class="setName">Right-aligned icon</div>
-                    <div class="ui left icon input">
-                      <input type="text" placeholder="Search users">
-                        <i class="user icon"></i>
+                    <div class="setName">In item header</div>
+                    <div class="ui dropdown button">
+                        <div class="text">Select document</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">
+                                Starred <div class="ui label" data-type="number">1</div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="item">Say yes, not No.</div>
+                            <div class="divider"></div>
+                            <div class="header">
+                                Shared<div class="ui label" data-type="number">2</div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="item">Sprint</div>
+                            <div class="item">Don't make me think</div>
+                        </div>
                     </div>
                 </div>
-                
-            </div>  
-            
-            <!-- Link icon -->
-            <p class="description" id="input-icon-link" data-width="small"></p>
-             <div class="ui one column grid" data-width="medium">
-                <div class="column setItem">
-                    <div class="setName">Link icon</div>
-                    <div class="ui icon input">
-                      <input type="text" placeholder="Share with members...">
-                        <i class="link link icon"></i>
-                    </div>
-                </div>
+               <!-- End -->
             </div>
-            
         </div>
         
-        <!-- Text Labeled input -->
-        <div class="block" id="input-labeled-text">
-            <div class="title">Text labeled</div>
+        <!-- description -->
+        <div class="block" id="dropdown-description">
+            <div class="title">Description</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui three column stackable grid" data-width="medium">
-                <!-- Right aligned text label -->
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- floated-->
                 <div class="column setItem">
-                    <div class="setName">Left-aligned text label</div>
-                    <div class="ui labeled input">
-                        <div class="ui label">http://</div>
-                        <input type="text" placeholder="mysite.com">
+                    <div class="setName">Floated right in item</div>
+                    <div class="ui dropdown button">
+                        Select staff group
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">
+                                <span class="text">Sales</span>
+                                <span class="description">Busy</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Sales</span>
+                                <span class="description">Busy</span>
+                            </div>
+                            <div class="item">
+                                <span class="text">Sales</span>
+                                <span class="description">Busy</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+               <!-- End -->
                 
-                <!-- Left aligned text label -->
+                <!-- below -->
                 <div class="column setItem">
-                    <div class="setName">Right-aligned text label</div>
-                    <div class="ui right labeled input">
-                      <input type="text" placeholder="Search users">
-                        <div class="ui label">kg.</div>
+                    <div class="setName">Under the item title</div>
+                    <div class="ui dropdown button">
+                        Select document
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                           <div class="item" data-type="below_desc">
+                                <div class="title">Sales</div>
+                                <div class="information">In charge of Singapore customer </div>
+                            </div>
+                            <div class="item" data-type="below_desc">
+                                <div class="title">Communication</div>
+                                <div class="information">Currently not available</div>
+                            </div>
+                            <div class="item" data-type="below_desc">
+                                <div class="title">Marketing</div>
+                                <div class="information">In charge of Vietnam market </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Both side text labeled -->
-                <div class="column setItem">
-                    <div class="setName">2-sided text label</div>
-                    <div class="ui right labeled input">
-                        <div class="ui label">http://</div>
-                        <input type="text" placeholder="mysite.com">
-                        <div class="ui label">.com</div>
-                    </div>
-                </div>
-                
-            </div> 
+               <!-- End -->
+            </div>
         </div>
         
-        <!-- Selection Labeled input -->
-        <div class="block" id="input-labeled-selection">
-            <div class="title">Selection Labeled</div>
+        <!-- image -->
+        <div class="block" id="dropdown-image">
+            <div class="title">Image</div>
             <p class="description" data-width="small"></p>
-             <div class="ui three column grid" data-width="medium">
-                <!-- Left aligned selection label -->
-                 <div class="column setItem">
-                    <div class="setName">left-aligned selection label</div>
-                    <div class="ui labeled input">
-                        <div class="ui compact selection dropdown" data-type="label-first">
-                            <i class="dropdown icon"></i>
-                            <div class="text">+84</div>
-                            <div class="menu">
-                                <div class="item">+65</div>
-                                <div class="item">+84</div>
-                                <div class="item">+33</div>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- user avatar-->
+                <div class="column setItem">
+                    <div class="setName">In dropdown</div>
+                    <div class="ui dropdown button" tabindex="0">
+                        <div class="text">Select staffs group</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu" tabindex="-1">
+                            <div class="item">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_1.jpg"></img>Jane Anaberthy
                             </div>
-                        </div>
-                        <input type="text" placeholder="Phone number">
-                    </div>
-                </div>
-                 
-                 <!-- Right aligned selection label -->
-                 <div class="column setItem">
-                    <div class="setName">Right-aligned selection label</div>
-                    <div class="ui right labeled input">
-                        <input type="text" placeholder="Find domain">
-                        <div class="ui compact selection dropdown" data-type="label-last">
-                            <i class="dropdown icon"></i>
-                            <div class="text">.com</div>
-                            <div class="menu">
-                                <div class="item">.com</div>
-                                <div class="item">.net</div>
-                                <div class="item">.org</div>
+                            <div class="item">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_2.jpg"></img>David Blurry
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_3.jpg"></img>Richard James
                             </div>
                         </div>
                     </div>
                 </div>
-                 
-                 <!-- Both side selection label -->
-                 <div class="column setItem">
-                    <div class="setName">2-sided selection label</div>
-                    <div class="ui right labeled input">
-                        <div class="ui compact selection dropdown" data-type="label-first">
-                            <i class="dropdown icon"></i>
-                            <div class="text">+84</div>
-                            <div class="menu">
-                                <div class="item">+65</div>
-                                <div class="item">+84</div>
-                                <div class="item">+33</div>
+               <!-- End -->
+    
+                <!-- user avatar-->
+                <div class="column setItem">
+                    <div class="setName">In selection</div>
+                    <div class="ui selection dropdown" data-width="medium">
+                        <input type="hidden" name="gender">
+                        <div class="text"> Type of order</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="drinks">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_1.jpg"></img>Jane Anaberthy
                             </div>
-                        </div>
-                        <input type="text" placeholder="Find domain">
-                        <div class="ui compact selection dropdown" data-type="label-last">
-                            <i class="dropdown icon"></i>
-                            <div class="text">Home</div>
-                            <div class="menu">
-                                <div class="item">Work</div>
-                                <div class="item">Personal</div>
-                                <div class="item">Mobile</div>
+                            <div class="item" data-value="drinks">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_2.jpg"></img>David Blurry
+                            </div>
+                            <div class="item" data-value="drinks">
+                                <img class="ui avatar image" src="../dist/img/avatar/ava_3.jpg"></img>Richard James
                             </div>
                         </div>
                     </div>
-                </div>  
-            </div> 
+                </div>
+               <!-- End -->
+    
+            </div>
         </div>
-        
-        <!-- Action Labeled input -->
-        <div class="block" id="input-labeled-action">
-            <div class="title">Action Labeled</div>
-            <p class="description" data-width="small"></p>
-             <div class="ui three column grid" data-width="medium">
-                <!-- Left aligned selection label -->
-                 <div class="column setItem">
-                    <div class="setName">Left-aligned action label</div>
-                    <div class="ui left action input">
-                        <button class="ui primary labeled icon button">
-                            <i class="cart icon"></i>
-                            Subscribe
-                        </button>
-                        <input type="text" value="$520">
-                    </div>
 
-                </div>
-                 
-                 <!-- Right aligned action label -->
-                 <div class="column setItem">
-                    <div class="setName">Right-aligned action label</div>
-                    <div class="ui action input">
-                        <input type="text" value="+84 37928474">
-                        <button class="ui button">Copy</button>
-                    </div>
-                </div>
-                 
-                 <!-- Icon selection label -->
-                 <div class="column setItem">
-                    <div class="setName">Complex action label</div>
-                    <div class="ui action input">
-                        <input type="text" placeholder="Search...">
-                        <select class="ui compact selection dropdown">
-                            <option value="general">General</option>
-                            <option selected="" value="articles">Articles</option>
-                            <option value="products">Products</option>
-                        </select>
-                        <div type="submit" class="ui primary button">Add</div>
-                    </div>
-                </div>  
-            </div> 
-        </div>
-        
-         <!-- Fluid input -->
-        <div class="block" id="input-fluid">
-            <div class="title">Fluid input</div>
+        <!-- message -->
+        <div class="block" id="dropdown-message">
+            <div class="title">Message</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui one column grid" data-width="small">
+            <div class="ui stackable one column grid" data-width="medium">
+                <!-- info -->
                 <div class="column setItem">
-                    <div class="setName">Fluid input</div>
-                    <div class="ui fluid input">
-                      <input type="text" placeholder="Type your first name">
+                    <div class="setName">Inform message</div>
+                    <div class="ui dropdown button">
+                        Select staff group
+                        <i class="dropdown icon"></i>
+                        <div class="menu" data-type="has-message">
+                            <div class="ui info message">
+                                <div class="header">Oops!</div>
+                                <div class="content">This feature is only for members. You have to <a href="">Login</a> or <a href="">Signup</a> to use this.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+               <!-- End -->
+            </div>
+        </div>
+
+        <!-- icon -->
+        <div class="block" id="dropdown-icon">
+            <div class="title">icon button</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- left poiting -->
+                <div class="column setItem">
+                    <div class="setName">Left pointing dropdown</div>
+                    <div class="ui icon bottom left pointing dropdown button">
+                      <i class="setting icon"></i>
+                      <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">New</span>
+                          <div class="menu">
+                            <div class="item">Document</div>
+                            <div class="item">Image</div>
+                          </div>
+                        </div>
+                        <div class="item">Save As...</div>
+                        <div class="item">Edit</div>
+                      </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- right poiting -->
+                <div class="column setItem">
+                    <div class="setName">Right pointing dropdown</div>
+                    <div class="ui icon bottom right pointing dropdown button">
+                      <i class="setting icon"></i>
+                      <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">New</span>
+                          <div class="menu">
+                            <div class="item">Document</div>
+                            <div class="item">Image</div>
+                          </div>
+                        </div>
+                        <div class="item">Save As...</div>
+                        <div class="item">Edit</div>
+                      </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- groupped -->
+                <div class="column setItem">
+                    <div class="setName">Groupped icon</div>
+                    <div class="ui buttons">
+                        <div class="ui icon bottom right pointing dropdown button">
+                          <i class="setting icon"></i>
+                          <div class="menu">
+                            <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">New</span>
+                              <div class="menu">
+                                <div class="item">Document</div>
+                                <div class="item">Image</div>
+                              </div>
+                            </div>
+                            <div class="item">Save As...</div>
+                            <div class="item">Edit</div>
+                          </div>
+                        </div>
+                        <div class="ui icon bottom right pointing dropdown button">
+                          <i class="save icon"></i>
+                          <div class="menu">
+                            <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">New</span>
+                              <div class="menu">
+                                <div class="item">Document</div>
+                                <div class="item">Image</div>
+                              </div>
+                            </div>
+                            <div class="item">Save As...</div>
+                            <div class="item">Edit</div>
+                          </div>
+                        </div>
+                        <div class="ui icon bottom right pointing dropdown button">
+                          <i class="star icon"></i>
+                          <div class="menu">
+                            <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">New</span>
+                              <div class="menu">
+                                <div class="item">Document</div>
+                                <div class="item">Image</div>
+                              </div>
+                            </div>
+                            <div class="item">Save As...</div>
+                            <div class="item">Edit</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+                <!-- icon button -->
+                <div class="column setItem">
+                    <div class="setName">Icon button</div>
+                    <div class="ui buttons">
+                        <div class="ui button">Export</div>
+                        <div class="ui top right pointing dropdown icon button">
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">Export to .cvs</div>
+                                <div class="item">Export to .pdf</div>
+                                <div class="item">Export to .doc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+                
+            </div>
+        </div>
+
+        <!-- inline -->
+        <div class="block" id="dropdown-image">
+            <div class="title">Inline</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable two column grid" data-width="medium">
+                <!-- with avatar-->
+                <div class="column setItem">
+                    <div class="setName">With avatar</div>
+                    Show me posts by
+                    <div class="ui inline dropdown">
+                        <div class="text">
+                          <img class="ui avatar image" src="../dist/img/avatar/ava_2.jpg">
+                          Jenny Hess
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_3.jpg">
+                            Jenny Hess
+                          </div>
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_5.jpg">
+                            Elliot Fu
+                          </div>
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_6.jpg">
+                            Stevie Feliciano
+                          </div>
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_1.jpg">
+                            Christian
+                          </div>
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_9.jpg">
+                            Matt
+                          </div>
+                          <div class="item">
+                            <img class="ui avatar image" src="../dist/img/avatar/ava_4.jpg">
+                            Justen Kitsune
+                          </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End --> 
+                
+                <!-- only text-->
+                <div class="column setItem">
+                    <div class="setName">Only text</div>
+                    <div class="content">
+                        <i class="trophy icon"></i>
+                        Trending repos
+                        <div class="ui inline dropdown">
+                          <div class="text">today</div>
+                          <i class="dropdown icon"></i>
+                          <div class="menu">
+                            <div class="header">Adjust time span</div>
+                            <div class="active item" data-text="today">Today</div>
+                            <div class="item" data-text="this week">This Week</div>
+                            <div class="item" data-text="this month">This Month</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- End -->
+    
             </div>
         </div>
         
