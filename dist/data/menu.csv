@@ -12,6 +12,14 @@ section,child,style,typo,Typography
 section,child,style,icon,Icon Package
 category,second,component,,Components
 section,child,component,component,Components
+section,child,component,button,Button
+section,child,component,checkbox,Checkbox
+section,child,component,dropdown,Dropdown
+section,child,component,image,Image
+section,child,component,input,Input
+section,child,component,label,Label
+section,child,component,message,Message
+section,child,component,step,Step
 category,third,pattern,,Patterns
 section,child,pattern,pattern,Patterns
 category,first,state,,State
