@@ -68,7 +68,7 @@
             <div class="ui stackable one column grid" data-width="medium">
                 <!-- Default-->
                 <div class="column setItem">
-                    <div class="setName">Default</div>
+                    <div class="setName">Default flow</div>
                     <div class="ui ordered steps">
                         <div class="active step">
                             <div class="content">
@@ -102,7 +102,7 @@
             <div class="ui one column grid" data-width="medium">
                 <!-- Default-->
                 <div class="column setItem">
-                    <div class="setName">Default</div>
+                    <div class="setName">Default flow</div>
                     <div class="ui steps">
                         <div class="completed step">
                             <i class="shopping cart icon"></i>
@@ -123,6 +123,37 @@
                             <div class="content">
                                 <div class="title">Confirm Order</div>
                                 <div class="description">Check your email</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- text step -->
+        <div class="block" id="step-text">
+            <div class="title">Only text steps</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui stackable one column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName">Default flow</div>
+                    <div class="ui steps">
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
                             </div>
                         </div>
                     </div>
@@ -271,17 +302,94 @@
             </div>
         </div>
         
+        <!-- vertical step -->
+        <div class="block" id="step-vertical">
+            <div class="title">Vertical</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui vertical ordered steps">
+                        <div class="completed step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
+        <!-- fluid step -->
+        <div class="block" id="step-fluid">
+            <div class="title">fluid width</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="small">
+                <!-- Default-->
+                <div class="column setItem">
+                    <div class="setName"></div>
+                    <div class="ui vertical fluid ordered steps">
+                        <div class="completed step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="completed step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="active step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        
         <!-- description -->
         <div class="block" id="step-desc">
             <div class="title">Description</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui one column grid" data-width="medium">
+            <div class="ui two column grid" data-width="medium">
                 <!-- with desc -->
                 <div class="column setItem">
                     <div class="setName">With description</div>
                     <div class="ui ordered steps">
                         <div class="step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui steps">
+                        <div class="step">
+                            <i class="shopping cart icon"></i>
                             <div class="content">
                                 <div class="title">Shipping</div>
                                 <div class="description">Choose your shipping options</div>
@@ -294,10 +402,18 @@
                 <!-- without desc -->
                 <div class="column setItem">
                     <div class="setName">Without description</div>
-                    <div class="ui ordered steps">
+                    <div class="ui ordered steps" data-content="without-desc">
                         <div class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm order by confirmation email</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui steps" data-content="without-desc-icon">
+                        <div class="step" >
+                            <i class="shopping cart icon"></i>
                             <div class="content">
-                                <div class="title">Shipping</div>
+                                <div class="title">Confirm order by confirmation email</div>
                             </div>
                         </div>
                     </div>
@@ -306,7 +422,39 @@
             </div>
         </div>
         
-        
+        <!-- link -->
+        <div class="block" id="step-link">
+            <div class="title">Link</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui one column grid" data-width="medium">
+                <!-- with desc -->
+                <div class="column setItem">
+                    <div class="setName">Next step or completed step can contain link</div>
+                    <div class="ui ordered steps">
+                        <a class="completed step">
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </a>
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <a class="step">
+                            <div class="content"> 
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
         
     </div>
 

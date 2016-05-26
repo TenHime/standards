@@ -998,3 +998,15 @@ strong{
 .ui.steps>.active.step{
     background: #fcfcfc!important;
 }
+
+.ui.steps[data-content="without-desc"] > .step{
+   padding-top:1.851852rem!important; padding-bottom:1.851852rem!important; 
+}
+
+.ui.steps[data-content="without-desc-icon"] > .step{
+   padding-top:1.370370rem!important; padding-bottom:1.370370rem!important; 
+}
+
+.ui.steps > a.active.step {
+    background: 
+}
