@@ -104,6 +104,10 @@
     margin-bottom:30px;
 }
 
+*[data-page="checkbox"] #content .block > p ul li{
+    text-align: left!important;
+}
+
 *[data-page="checkbox"] .setName {
     font-family: 'Karla', sans-serif;
 }

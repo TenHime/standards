@@ -81,32 +81,31 @@ var colorDescription =
 
 // color > primary
 var colorPrimary =
-    "Primary is a bright, warm blue that often used along with neutral colors. From a color psychology perspective, blue is reliable and responsible. In our apps, this color is often put in one-to-one communication which used to assist users in decision-making with a complete confidence to take critical actions.";
+    "Primary color is a bright, warm blue that often used along with neutral colors. From a color psychology perspective, blue is reliable and responsible. In our apps, this color is often put in one-to-one communication which used to <strong>assist users in decision-making with a complete confidence to take critical actions</strong>.";
 
 // color > info
 var colorInfo =
-    "Info color is a combination of blue and a small amount of yellow which helps to open the lines of communication. It is a great color we use to announce information by presenting it as the background of simple message. Due to its friendly and calm color, we can influence users to show emotional reactions rather than forcing them to take messages strictly.";
+    "Info color is a combination of blue and a small amount of yellow which helps to open the lines of communication. It is a great color we use to announce information by <strong>presenting it as the background of simple message</strong>. Due to its friendly and calm color, we can influence users to show emotional reactions rather than forcing them to take messages strictly.";
 
 // color > success
 var colorSuccess =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    "Success color is a bright, fresh and  green which is best to deliver cooporative and positive messages. <strong>Whenever users achive a task or a progress has completed, don't hesitate to use this color in the announcement.</strong> Taking advantage of its strong association with fresh growth and wealth, we ensure users that our products are working well and trustworthy.";
 
 // color > warning
 var colorWarning =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
-
+    "Orange is perceived as a warning color due to its close relation to red-a strong color for urgent issues. However, it is gentler and still give warmth confidence. In Hoiio prodcuts, any elements can go with orange when they need to <strong>stimulate an awareness</strong> and <strong>encourage users to take an action (especially before it is too late)</strong> without addressing any negative tone.";
 
 // color > error
 var colorError =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    "Error color is only used for any urgent or negative issues which may <strong>cause impact to users data</strong>, <strong>block the work flow</strong> or <strong>not working properly</strong>. These issues require users attention and respond actions. Keywords usually go with this color: <strong>'Expired'</strong>, <strong>'Offline'</strong>, <strong>'Wrong input format'</strong>, etc. However, do not overuse this color or flood the page with all elements bouncing in red.";
 
 // color > pending
 var colorPending =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
+    "Pending color is used for events that is in <strong>waiting status</strong> but don't cause any harm to data and workflow.";
 
 // color > neutral
 var colorNeutral =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
+    "Neutral colors are not used as outstanding visual elements or to call any actions. However, these are the foundation color scheme that build the structure of all components. To maintain the consistency look, just use these colors for any lines, table dividers, button borders and more.";
 
 
 /*----------------------------
@@ -128,7 +127,9 @@ var iconDescription =
 ----------------------------*/
 //component > general
 
-//button > general
+/*-- Button --*/
+
+//button > type
 var buttonDescription =
     "Buttons are used to trigger an action. To maintain the consistency and simplicity accros Hoiio products, all action cases are covered within 4 types of button and 3 colors.";
 
@@ -138,7 +139,7 @@ var buttonStandard =
 
 //button > primary
 var buttonPrimary =
-    "Primary buttons are used for the highest priority and strongest call to action. In form, do not use more than 1 primary button. In pages, do not place 2 primary buttons next to each other. Instead, consider other types of button based on the priority level.<br/> <strong>Color code: #008BD9 </strong>";
+    "Primary buttons are used for the highest priority and strongest call to action. In form, do not use more than 1 primary button. In pages, do not place 2 primary buttons next to each other. Instead, consider other types of button based on the priority level. The most regular case is the <strong>'Create post'</strong> button<br/> <strong>Color code: #008BD9 </strong>";
 
 //button > warning
 var buttonWarning =
@@ -146,7 +147,34 @@ var buttonWarning =
 
 //button > link
 var buttonLink =
-    "Link buttons are used for the lowest priority or least encouraging actions such as 'Cancel', 'Clear all' or 'Select all'";
+    "Link button serves the lowest prioty action. Keywords associate with this type : <strong>'Cancel'</strong>, <strong>'Clear all'</strong>, etc.";
+
+//button > variation
+var buttonVariation =
+    "After choosing the suitable button type, based on the requiremnt of the context and general visual, some elements can be added into button to provide specific information.";
+
+//button > compact
+var buttonCompact =
+    "Compact button has no predefined size. It scales based on the content you gave to fit in small space. This button is not recommended to be widely used.";
+
+//button > icon
+var buttonIcon =
+    "A button can contain a icon to increase the action recognition. An action that is used accross products or screens should have same icon and in same form.";
+
+//button > group
+var buttonGroup =
+    "Buttons can be groupped together if they are in the same category and serve related actions.";
+
+/*-- Button --*/
+
+
+//button > link
+var buttonLind =
+    "";
+
+//button > link
+var buttonLind =
+    "";
 
 
 $('[data-page="home"] #intro .tag-line').append(intro);
@@ -180,9 +208,13 @@ $('[data-page="typo"] #content > .block > .description').append(typoDescription)
 $('[data-page="icon"] #content > .block > .description').append(iconDescription);
 
 //Button
-$('[data-page="button"] #button-main .description').append(buttonDescription);
+$('[data-page="button"] #button-type .description').append(buttonDescription);
 $('[data-page="button"] #button-standard .description').append(buttonStandard);
 $('[data-page="button"] #button-primary .description').append(buttonPrimary);
 $('[data-page="button"] #button-warning .description').append(buttonWarning);
 $('[data-page="button"] #button-link .description').append(buttonLink);
+$('[data-page="button"] #button-variation .description').append(buttonVariation);
+$('[data-page="button"] #button-compact .description').append(buttonCompact);
+$('[data-page="button"] #button-icon .description').append(buttonIcon);
+$('[data-page="button"] #button-groupped .description').append(buttonGroup);
 
