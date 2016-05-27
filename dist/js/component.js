@@ -84,7 +84,7 @@ $(document).ready(function () {
     // Standard
     $('.ui.dropdown').dropdown();
 
-    $('.ui.dropdown').dropdown({
+    $('.ui.search.dropdown.additions').dropdown({
         allowAdditions: true
     });
 

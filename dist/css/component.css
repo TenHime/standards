@@ -88,7 +88,7 @@
     margin: 0 auto;
 }
 
-*[data-page="checkbox"] #content .block > .grid[data-width="medium"] >.column:not(:first-child):not(:nth-child(2)){
+*[data-page="checkbox"] #content .block > .two.column.grid[data-width="medium"] >.column:not(:first-child):not(:nth-child(2)){
     margin-top: 30px!important;
 }
 
@@ -149,6 +149,11 @@
     margin-top: 30px;
 }
 
+/* read-only */
+*[data-page="checkbox"] #content .block > .grid > .column.setItem > .read-only.checkbox{
+    pointer-events: none!important;
+    cursor: none!important;
+}
 
 /*-------for semantic-------*/
 
@@ -179,8 +184,6 @@
     max-width: 900px!important;
     margin: 0 auto;
 }
-
-
 
 @media only screen and (max-width: 767px){
     *[data-page="message"] #content .block > .grid {
@@ -235,7 +238,6 @@
 *[data-page="message"] .setItem > .setName[data-type="for-modal"] {
     margin-bottom: 30px;
 }
-
 
 /*-------for modal-------*/
 
@@ -737,6 +739,14 @@ strong{
 }
 
 /*restyle active*/
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .active.item{
+    font-weight: 600!important;
+}
+
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown.button > .menu > .active.selected.item{
+    font-weight: 600!important;
+}
+
 *[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .active.item[data-type="below_desc"] > .information {
     font-weight: 500;
     color: #414141;

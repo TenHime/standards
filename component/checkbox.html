@@ -61,7 +61,7 @@
         </div>
 
         <!-- Checkbox -->
-        <div class="block" id="checkbox">
+        <div class="block" id="checkbox-checkbox">
             <div class="title">checkbox</div>
             <p class="description" data-width="small"></p>
             
@@ -185,7 +185,7 @@
         </div>
     
         <!-- Radio -->
-        <div class="block" id="radio">
+        <div class="block" id="checkbox-radio">
             <div class="title">Radio</div>
             <p class="description" data-width="small"></p>
             
@@ -321,32 +321,32 @@
             </div>
         </div>
 
-        <!-- Slider -->
-        <div class="block" id="slider">
+        <!-- Slider 
+        <div class="block" id="checkbox-slider">
             <div class="title">Slider</div>
             <p class="description" data-width="small"></p>
             
             <div class="ui two column grid" data-width="medium">
                 <!-- Enabled -->
-                <div class="column setItem">
+                <!--<div class="column setItem">
                     <div class="setName">Enabled slider</div>
                     <div class="ui slider checkbox">
                       <input type="checkbox" name="newsletter">
                       <label>Accept terms and conditions</label>
                     </div>
-                </div>
+                </div>-->
                 
                 <!-- Disabled -->
-                <div class="column setItem">
+                <!-- <div class="column setItem">
                     <div class="setName">Disabled silder</div>
                     <div class="ui disabled slider checkbox">
                       <input type="checkbox" name="newsletter" disabled="disabled">
                       <label>Accept terms and conditions</label>
                     </div>
-                </div>
+                </div>-->
                 
                 <!-- Exclusive choice slider -->
-                <div class="column setItem">
+                <!-- <div class="column setItem">
                     <div class="setName">Exclusive choice slider</div>
                     <div class="ui form">
                         <div class="grouped fields" data-width="short">
@@ -377,10 +377,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <!-- Multiple choice slider -->
-                <div class="column setItem">
+                <!-- <div class="column setItem">
                     <div class="setName">Multiple choice slider</div>
                     <div class="ui form">
                         <div class="grouped fields" data-width="short">
@@ -413,10 +413,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!-- Toggle -->
-        <div class="block" id="toggle">
+        <div class="block" id="checkbox-toggle">
             <div class="title">Toggle</div>
             <p class="description" data-width="small"></p>
             
@@ -511,31 +511,23 @@
         </div>
         
         <!-- Read Only -->
-        <div class="block" id="read-only">
+        <div class="block" id="checkbox-read-only">
             <div class="title">Read-only</div>
             <p class="description" data-width="small"></p>
             
-            <div class="ui two column grid" data-width="medium">
+            <div class="ui three column grid" data-width="medium">
                 <div class="column setItem">
                     <div class="setName">Checkbox</div>
-                    <div class="ui checkbox">
-                        <input type="radio" name="example1" class="hidden">
+                    <div class="ui read-only checkbox">
+                        <input type="radio" name="example1" class="hidden" checked="checked">
                         <label>Send weekly newsletters</label>
                     </div>
                 </div>
                 
                 <div class="column setItem">
                     <div class="setName">Radio</div>
-                    <div class="ui radio checkbox">
+                    <div class="ui radio read-only checkbox">
                         <input type="radio" name="example2" class="hidden">
-                        <label>Send weekly newsletters</label>
-                    </div>
-                </div>
-                
-                <div class="column setItem">
-                    <div class="setName">Silder</div>
-                    <div class="ui slider checkbox">
-                        <input type="radio" name="example3" class="hidden">
                         <label>Send weekly newsletters</label>
                     </div>
                 </div>
@@ -547,6 +539,14 @@
                         <label>Send weekly newsletters</label>
                     </div>
                 </div>
+                
+                <!--- <div class="column setItem">
+                    <div class="setName">Silder</div>
+                    <div class="ui read-only slider checkbox">
+                        <input type="radio" name="example3" class="hidden">
+                        <label>Send weekly newsletters</label>
+                    </div>
+                </div> -->
                 
             </div>
         </div>

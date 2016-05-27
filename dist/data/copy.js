@@ -135,7 +135,7 @@ var buttonDescription =
 
 //button > standard
 var buttonStandard =
-    "Standard button are used in most use cases and it should be the first option to think of when deciding which button type to use. Many standard buttons can be placed together.";
+    "Standard buttons are used in most use cases and this should be the first option to think of when deciding which button type to use. Many standard buttons can be placed together.";
 
 //button > primary
 var buttonPrimary =
@@ -143,39 +143,131 @@ var buttonPrimary =
 
 //button > warning
 var buttonWarning =
-    "Warning button is a special case of primary button that specifically used for the action that may cause huge impact to user's database. Example: delete data, unsubscribe plan, etc.<br/> <strong>Color code: #E64333 </strong>";
+    "The warning button is a special case of primary button that specifically used for the action that may cause huge impact to user's database. Example: delete data, unsubscribe plan, etc.<br/> <strong>Color code: #E64333 </strong>";
 
 //button > link
 var buttonLink =
-    "Link button serves the lowest prioty action. Keywords associate with this type : <strong>'Cancel'</strong>, <strong>'Clear all'</strong>, etc.";
+    "Link buttons serve the lowest prioty action. Keywords associate with this type : <strong>'Cancel'</strong>, <strong>'Clear all'</strong>, etc.";
 
 //button > variation
 var buttonVariation =
-    "After choosing the suitable button type, based on the requiremnt of the context and general visual, some elements can be added into button to provide specific information.";
+    "After choosing the suitable button type, based on the requirment of the context and general visual, some elements can be added into button to provide specific information.";
 
 //button > compact
 var buttonCompact =
-    "Compact button has no predefined size. It scales based on the content you gave to fit in small space. This button is not recommended to be widely used.";
+    "Compact buttons have no predefined size. Their scales are based on the content you gave to fit in small spaces. This button is not recommended to be widely used.";
 
 //button > icon
 var buttonIcon =
-    "A button can contain a icon to increase the action recognition. An action that is used accross products or screens should have same icon and in same form.";
+    "A button can contain a icon to increase the action recognition. An action that is used accross products or screens should have same icon, same name and in same form.";
 
 //button > group
 var buttonGroup =
-    "Buttons can be groupped together if they are in the same category and serve related actions.";
+    "Buttons can be groupped together if they are in the same category and serve related actions.<br/>The order of buttons should be placed from left to right based on the decent of usage and importance level. One button could be set as primary button among standard one.";
 
-/*-- Button --*/
+/*-- Checkbox --*/
 
+//checkbox > main
+var checkboxDescription =
+    "Checkboxes in general <strong>allow users to select an option from a given set</strong>. Although checkbox can be interchangable with dropdown, when the need of previewing all options at once before selecting is high, it is preferred to use checkbox rather than dropdown.<br/><br/>Based on the purpose of selecting value, there are <strong>2 checkbox behaviours</strong> which are converted into <strong>4 types</strong>. Besides, there are also style variations fitted in variety of layouts.";
 
-//button > link
-var buttonLind =
+//checkbox > checkbox
+var checkboxCheckbox =
+    "Checkboxes allow users to select <strong>multiple options</strong> within a set. Make sure options in the set are not clashed each other and all of them contribute to the overall value.";
+
+//checkbox > radio
+var checkboxRadio =
+    "Radio checkboxes only allow user <strong>exclusively select one</strong> among a set of option.";
+
+//checkbox > slider
+var checkboxSlider =
     "";
 
-//button > link
-var buttonLind =
-    "";
+//checkbox > toggle
+var checkboxToggle =
+    "Toggle checkboxes represent <strong>the enabled/disabled state</strong> of a specific value. They can be used independently with one value or in a set. Users can toggle a value as well as toggle a group of information and form.";
 
+//checkbox > read-only
+var checkboxReadOnly =
+    "Read-only checkboxes help users be aware of what term has been given and whether that term has been applied or not.<br/><br/> Users <strong>can not disable the read-only state </strong>to check or uncheck the checkbox unless they complete a task or be qualified for a condition. ";
+
+/*-- Dropdown --*/
+
+//dropdown > main
+var dropdownDescription =
+    "Dropdowns <strong>allow users to select option from a given set</strong>, <strong>trigger an action</strong> or <strong> select a filter</strong>. Dropdowns can be interchangable with checkboxes but they are more preferred for small spaces.<br/><br/>Based on the purpose of selecting option, there are <strong>3 dropdown behaviours</strong> and many variations to serve different use cases.";
+
+//dropdown > dropdown
+var dropdownDropdown =
+    "Action dropdowns are usually used as <strong>filters</strong> or <strong>action triggers</strong>. In the filter, an option to reset the default state should be given.";
+
+//dropdown > selection
+var dropdownSelection =
+    "Single choice selections are often <strong>used in forms</strong> to allow user <strong>select one option</strong> within a given set. In the set, an option to reset the default state should be given.";
+
+//dropdown > search selection
+var dropdownSearch =
+    "The process of finding and selecting options can be fasten by providing users the search feature in the input field (for selection) or in the menu (for dropdown).";
+
+//dropdown > multi selection
+var dropdownMultiSelection =
+    "Multiple selections let users select more than one option within a set. Make sure all options are not clashed each other.";
+
+//dropdown > add
+var dropdownAdd =
+    "Based on the context of the selection in a form, users can <strong>type and add new options</strong> into the given set. These new options should remain in the set if users procceed the form. If users discard the form, clear it.";
+
+//dropdown > multi level
+var dropdownMultiLevel =
+    "Options can be groupped and nested in a sub menu based on its categories. If a dropdown <strong>has too many related options but not all of them are regularly used</strong> and <strong>requires users to scroll too much</strong>, consider nesting them in multi level menu. However <strong>do not over-nest them in more than 3 deep level.</strong>";
+
+//dropdown > header
+var dropdownHeader =
+    "Options can be arranged ascending based on the usage frequency and importance level to support quick browsing. Headers can be added to make sure users understand the arrangement logic.";
+
+//dropdown > icon item
+var dropdownIconItem =
+    "Icon can be added with text to increase the action recognition in users. Make sure any actions or values that is used accross products or screens should have same icon, same name and in same form.";
+
+//dropdown > type label
+var dropdownTypeLabel =
+    "Consider adding type labels if <strong>they accounts for contributing options' value</strong>; they also <strong>go with these options in other screens</strong>, <strong>support the purpose of the dropdown</strong> as well as <strong>fasten the progress of scanning through options</strong>.";
+
+//dropdown > quantity label
+var dropdownQuantityLabel =
+    "Quatity label can be added to indicate number of the content of each option. Consider displaying these lebels if it helps users fasten the browsing and deciding progress, especially when users have to decide based on quantity aspect.";
+
+//dropdown > description
+var dropdownItemDesc =
+    "Each options can have description if it helps users distinguish options and select the most suitable option for them. Descriptions could explain status or briefly clarify the option.";
+
+//dropdown > image
+var dropdownImage =
+    "User or application avatars can also be added in the dropdown.";
+
+//dropdown > message
+var dropdownMessage =
+    "A dropdown can set a condition for enable the dropdown menu. If a user is not qualified for the condition, inform them a message with a proper instruction.";
+
+//dropdown > icon button
+var dropdownIconButton =
+    "Dropdown buttons can have icons only <strong>if spaces are limited</strong>. Make sure the used icons for each options stay consistent accross screens and even products.";
+
+//dropdown > divided
+var dropdownDivided =
+    "If an action button has different settings, consider a dropdown attached along the button.";
+
+//dropdown > inline
+var dropdownInline =
+    "<strong>To avoid the heavy look in the layout when there are too many buttons</strong>, dropdown buttons can be reduced their style to inline text. However, consider the whole importance and usage hierarchy of all buttons in the layout when deciding which one should be inline. Inline dropdown buttons <strong>serve the least importance job</strong> and are usually <strong>used as filter</strong>.";
+
+//dropdown > variation
+var dropdownVariation =
+    "After deciding which type of dropdowns to use, other elements can be added or changed to fit a specific context.";
+
+//dropdown > content
+var dropdownContent =
+    "Option content can have many information elements to help users select the most suitable options.";
 
 $('[data-page="home"] #intro .tag-line').append(intro);
 $('[data-page="home"] #layout .tag-line').append(layout);
@@ -218,3 +310,31 @@ $('[data-page="button"] #button-compact .description').append(buttonCompact);
 $('[data-page="button"] #button-icon .description').append(buttonIcon);
 $('[data-page="button"] #button-groupped .description').append(buttonGroup);
 
+//Checkbox
+$('[data-page="checkbox"] #checkbox-main .description').append(checkboxDescription);
+$('[data-page="checkbox"] #checkbox-checkbox .description').append(checkboxCheckbox);
+$('[data-page="checkbox"] #checkbox-radio .description').append(checkboxRadio);
+$('[data-page="checkbox"] #checkbox-slider .description').append(checkboxSlider);
+$('[data-page="checkbox"] #checkbox-toggle .description').append(checkboxToggle);
+$('[data-page="checkbox"] #checkbox-read-only .description').append(checkboxReadOnly);
+
+//Dropdown
+$('[data-page="dropdown"] #dropdown-main .description').append(dropdownDescription);
+$('[data-page="dropdown"] #dropdown-dropdown .description').append(dropdownDropdown);
+$('[data-page="dropdown"] #dropdown-selection .description').append(dropdownSelection);
+$('[data-page="dropdown"] #dropdown-multi-selection .description').append(dropdownMultiSelection);
+$('[data-page="dropdown"] #dropdown-variation .description').append(dropdownVariation);
+$('[data-page="dropdown"] #dropdown-search-selection .description').append(dropdownSearch);
+$('[data-page="dropdown"] #dropdown-add .description').append(dropdownAdd);
+$('[data-page="dropdown"] #dropdown-multi-level .description').append(dropdownMultiLevel);
+$('[data-page="dropdown"] #dropdown-divided .description').append(dropdownDivided);
+$('[data-page="dropdown"] #dropdown-inline .description').append(dropdownInline);
+$('[data-page="dropdown"] #dropdown-icon-button .description').append(dropdownIconButton);
+$('[data-page="dropdown"] #dropdown-content .description').append(dropdownContent);
+$('[data-page="dropdown"] #dropdown-header .description').append(dropdownHeader);
+$('[data-page="dropdown"] #dropdown-icon .description').append(dropdownIconItem);
+$('[data-page="dropdown"] #dropdown-label-type .description').append(dropdownTypeLabel);
+$('[data-page="dropdown"] #dropdown-label-quantity .description').append(dropdownQuantityLabel);
+$('[data-page="dropdown"] #dropdown-image .description').append(dropdownImage);
+$('[data-page="dropdown"] #dropdown-message .description').append(dropdownMessage);
+$('[data-page="dropdown"] #dropdown-desc .description').append(dropdownItemDesc);
