@@ -291,11 +291,11 @@ var imageGroup =
 
 //input > main
 var inputDescription =
-    "Input fields are used to collect data by allowing user to input text or select text.";
+    "Input fields are used to collect data by allowing user to input text or select text. Inputs are used in form with labeled and combined with other components in most cases.";
 
 //input > single line
 var inputSingleLine =
-    ".";
+    "Input fields can be only single line when.";
 
 //input > area
 var inputArea =

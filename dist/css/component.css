@@ -677,7 +677,8 @@ textarea{
     border-radius:.2962963rem;
     border: 1px solid #ccc;
     min-height: 8rem;
-    max-height:14rem;;
+    max-height:14rem;
+    padding:.66666667rem 1.18518519rem!important;
 }
 
 /* end textarea */
