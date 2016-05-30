@@ -656,6 +656,32 @@ strong{
     margin-left: -1px;
 }
 
+/* restyle active item */
+*[data-page="input"]  #content .block > .grid > .setItem > .ui.dropdown > .menu > .active.item{
+    font-weight: 600!important;
+}
+
+*[data-page="input"] .ui.input > .ui.dropdown > .menu > .active.selected.item{
+    font-weight: 600!important;
+}
+
+*[data-page="input"] .ui.input > .ui.dropdown > .menu > .text:not(.default){
+    font-weight: 600!important;
+}
+/* end restyle active item */
+
+/* textarea */
+textarea{
+    width: 100%;
+    flex: 1 0 auto;
+    border-radius:.2962963rem;
+    border: 1px solid #ccc;
+    min-height: 8rem;
+    max-height:14rem;;
+}
+
+/* end textarea */
+
 /*------------------------
          DROPDOWN
 --------------------------*/
@@ -743,7 +769,7 @@ strong{
     font-weight: 600!important;
 }
 
-*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.dropdown.button > .menu > .active.selected.item{
+*[data-page="dropdown"]  #content .block > .grid > .setItem > .ui.buttons > .ui.dropdown.button > .menu > .active.selected.item{
     font-weight: 600!important;
 }
 

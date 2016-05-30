@@ -60,15 +60,15 @@
             <p class="description" data-width="small"></p>
         </div>
 
-        <!-- Default input -->
-        <div class="block" id="input-dropdown">
-            <div class="title">Dropdown</div>
+        <!-- Single line input -->
+        <div class="block" id="input-single-line">
+            <div class="title">single line input</div>
             <p class="description" data-width="small"></p>
             
             <div class="ui three column grid" data-width="medium">
                 <!-- Default -->
                 <div class="column setItem">
-                    <div class="setName">Defaut</div>
+                    <div class="setName">Enabled</div>
                     <div class="ui input">
                       <input type="text" placeholder="Type your name">
                     </div>
@@ -89,6 +89,27 @@
                       <input type="text" placeholder="Type your name">
                         <i class="search icon"></i>
                     </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Area input -->
+        <div class="block" id="input-area">
+            <div class="title">Area input</div>
+            <p class="description" data-width="small"></p>
+            
+            <div class="ui two column grid" data-width="medium">
+                <!-- Default -->
+                <div class="column setItem">
+                    <div class="setName">Default height</div>
+                    <textarea></textarea>
+                </div>
+                
+                <!-- Disabled -->
+                <div class="column setItem">
+                    <div class="setName">Defined height</div>
+                    <textarea rows="6"></textarea>
                 </div>
                 
             </div>
@@ -289,16 +310,20 @@
                     </div>
                 </div>
                  
-                 <!-- Icon selection label -->
+                 <!-- complex label -->
                  <div class="column setItem">
                     <div class="setName">Complex action label</div>
                     <div class="ui action input">
                         <input type="text" placeholder="Search...">
-                        <select class="ui compact selection dropdown">
-                            <option value="general">General</option>
-                            <option selected="" value="articles">Articles</option>
-                            <option value="products">Products</option>
-                        </select>
+                        <div class="ui compact selection dropdown">
+                            <i class="dropdown icon"></i>
+                            <div class="text">Articles</div>
+                            <div class="menu">
+                                <div class="item" value="general">General</div>
+                                <div class="item" selected="" value="articles">Articles</div>
+                                <div class="item" value="products">Products</div>
+                            </div>
+                        </div>
                         <div type="submit" class="ui primary button">Add</div>
                     </div>
                 </div>  

@@ -269,6 +269,70 @@ var dropdownVariation =
 var dropdownContent =
     "Option content can have many information elements to help users select the most suitable options.";
 
+/*-- Image --*/
+
+//image > main
+var imageDescription =
+    "Currently Hoiio products only consists of <strong>2 types of image</strong>: User avatars and Application avatars <strong>in 2 sizes</strong>.";
+
+//image > user
+var imageUser =
+    "User avatar has 2 sizes used in 2 different cases: <strong>Default size in tables</strong> and <strong>Big size in detail right panels</strong>.";
+
+//image > application
+var imageApplication =
+    "Application avatar also has 2 sizes used in 2 different cases: <strong>Default size in tables</strong> and <strong>Big size in detail right panels</strong>.";
+
+//image > group
+var imageGroup =
+    "Default sized mages or avatars can be placed in a group. <strong>Do not use big size for group</strong>.";
+
+/*-- Input --*/
+
+//input > main
+var inputDescription =
+    "Input fields are used to collect data by allowing user to input text or select text.";
+
+//input > single line
+var inputSingleLine =
+    ".";
+
+//input > area
+var inputArea =
+    ".";
+
+//input > error
+var inputError =
+    ".";
+
+//input > variation
+var inputVariation =
+    ".";
+
+//input > icon
+var inputIcon =
+    ".";
+
+//input > icon link
+var inputIconLink =
+    ".";
+
+//input > labeled text
+var inputLabeledText =
+    ".";
+
+//input > label selection
+var inputLabeledSelection =
+    ".";
+
+//input > label action
+var inputLabeledAction =
+    ".";
+
+//input > fluid
+var inputFluid =
+    ".";
+
 $('[data-page="home"] #intro .tag-line').append(intro);
 $('[data-page="home"] #layout .tag-line').append(layout);
 $('[data-page="home"] #styles .tag-line').append(style);
@@ -337,4 +401,23 @@ $('[data-page="dropdown"] #dropdown-label-type .description').append(dropdownTyp
 $('[data-page="dropdown"] #dropdown-label-quantity .description').append(dropdownQuantityLabel);
 $('[data-page="dropdown"] #dropdown-image .description').append(dropdownImage);
 $('[data-page="dropdown"] #dropdown-message .description').append(dropdownMessage);
-$('[data-page="dropdown"] #dropdown-desc .description').append(dropdownItemDesc);
+$('[data-page="dropdown"] #dropdown-desc .title + .description').append(dropdownItemDesc);
+
+//Image
+$('[data-page="image"] #image-main .description').append(imageDescription);
+$('[data-page="image"] #image-user .description').append(imageUser);
+$('[data-page="image"] #image-app .description').append(imageApplication);
+$('[data-page="image"] #image-group .description').append(imageGroup);
+
+//Input
+$('[data-page="input"] #input-main .description').append(inputDescription);
+$('[data-page="input"] #input-single-line .description').append(inputSingleLine);
+$('[data-page="input"] #input-area .description').append(inputArea);
+$('[data-page="input"] #input-error .description').append(inputError);
+$('[data-page="input"] #input-variation .description').append(inputVariation);
+$('[data-page="input"] #input-icon .description').append(inputIcon);
+$('[data-page="input"] #input-icon-link .description').append(inputIconLink);
+$('[data-page="input"] #input-labeled-text .description').append(inputLabeledText);
+$('[data-page="input"] #input-labeled-selection .description').append(inputLabeledSelection);
+$('[data-page="input"] #input-labeled-action .description').append(inputLabeledAction);
+$('[data-page="input"] #input-fluid .description').append(inputFluid);
