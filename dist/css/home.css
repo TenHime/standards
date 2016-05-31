@@ -189,6 +189,14 @@
     height: auto;
 }
 
+#pattern .button {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-width: 2px !important;
+}
+
 
 /*--------------------------------------
     homepage > content > components
@@ -345,4 +353,54 @@
 #layout .image > .four img {
     top: 0px;
     left: 415px;
+}
+
+/*--------------------------------------
+    homepage > content > download
+----------------------------------------*/
+
+#download {
+    position: relative;
+    z-index: 3;
+}
+
+#download .number {
+    content: '37';
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 130px;
+    letter-spacing: 3px;
+    opacity: 0.1;
+    top: -24%;
+    left: 38%;
+}
+
+#download .title {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#download p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+    font-family: 'Karla', sans-serif;
+}
+
+#download img.icon {
+    width: 85px;
+}
+
+#download .button {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-width: 2px !important;
+}
+
+#download .button img{
+    vertical-align: middle!important;
+    margin-right: 10px;
 }

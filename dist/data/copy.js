@@ -9,12 +9,12 @@ var intro =
 
 // layout > tagline
 var layout =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    "Consistency is the foundation to maintain and improve user experience. No matter what products are designed, the flows are always based on <strong>4 layouts.</strong>";
 
 
 // style > tagline
 var style =
-    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    "Style helps users recognise our products at the very first look. It is important that all design components follow the same styleguide to avoid any misaligned issues.";
 
 
 // style > color
@@ -24,7 +24,7 @@ var color =
 
 // style > fonts
 var fonts =
-    "Text font is the Poppins family, which contains five weights, from Light through Bold. With icon font, we use all icon has 409 icons, including all icons of Entypo and several custom icons.";
+    "Text font is the <strong>Poppins</strong> family, which contains five weights, from Light to Bold. For icons, Hoiio products uses <strong>409 icons</strong> in total, including all icons of Entypo and several custom icons.";
 
 
 // component > tagline
@@ -35,6 +35,11 @@ var component =
 // pattern > tagline
 var pattern =
     "Design patterns are standard reference points for the experienced user interface designer.";
+
+// download > tagline
+var download =
+    "Everything start from wireframes and mockups. Even if you can't draw, don't worry. We've already prepared <strong>Hoiio UI set</strong> with guidelines. All you need to do is <strong>copy</strong> & <strong>paste</strong>.<br/><br/><strong>Updated</strong>: Jun 01, 2016<br/>";
+
 
 
 // subscribe > tagline
@@ -295,43 +300,127 @@ var inputDescription =
 
 //input > single line
 var inputSingleLine =
-    "Input fields can be only single line when.";
+    "Input fields can be only single line when the input are just phrases, clauses or maximum 1 sentence.";
 
 //input > area
 var inputArea =
-    ".";
+    "Area input fields are designed for long text such as paragraphs and simple lists. Do not overuse area input fields in forms.";
 
 //input > error
 var inputError =
-    ".";
+    "Error input are a stage of default input when user mistype the format.";
 
 //input > variation
 var inputVariation =
-    ".";
+    "Based on the context the input fields are placed in and the data component, some elements can be added to the field to clarify the information requested. The goal is to reduce the effort of typing.";
 
 //input > icon
 var inputIcon =
-    ".";
+    "Input fields sometimes don't have attached labels. That's why they need icons as labels to specify the purpose of the input. Before using any new icon for the input, check other existing pattern to avoid icon duplicates (1 icon for different input type) or misaligned UI experience (1 input type has different icons).";
 
 //input > icon link
 var inputIconLink =
-    ".";
+    "However, input icons can be a link as well. If there is any <strong>actions that is related to the input</strong>, a link icon can be added inside the input to trigger that action. Each link icon has to <strong>have a tooltip</strong> popping up with action name.";
 
 //input > labeled text
 var inputLabeledText =
-    ".";
+    "If <strong>inputs have some data that are the default input format or duplicated in all input cases</strong>, consider making those data as prefilled labels. Positions those prefilled labels should follow the original data and make sense in natural reading comprehension flow.";
 
 //input > label selection
 var inputLabeledSelection =
-    ".";
+    "If inputs have some <strong>data that are limited in some predefined options</strong>, consider making them as fixed dropdown.";
 
 //input > label action
 var inputLabeledAction =
-    ".";
+    "Input can have direct actions attached next to the field. Use this type of input <strong> separately</strong>. <strong>Do not use in form</strong>.";
 
 //input > fluid
 var inputFluid =
-    ".";
+    "Input fields can automatically expand to thier parents wdith.";
+
+/*-- Label --*/
+
+//label > main
+var labelDescription =
+    "Labels are used for data classification.";
+
+//label > color
+var labelColor =
+    "There are 5 colors that labels can be applied to. However, before deciding which color to use, check Color meaning and the usage.";
+
+//label > usage
+var labelUsage =
+    "Currently there are about 5 use cases for labels. Some cases has fixed color usage: <strong>Quantity = Grey; Urgent status = Error color</strong>";
+
+//label > variation
+var labelVariation =
+    "Based on the context, there are many elements can be added into the label to provide more information.";
+
+//label > dot label
+var labelDot =
+    "Dot labels are usually used for displaying statuses.";
+
+//label > title number
+var labelTitleNumber =
+    "When the use case focuses on item's quantity, numbers can be added to label.";
+
+//label > avatar
+var labelAvatar =
+    "Avatar labels are usually used to display app users. Sometimes description can be attached. Avatar labels can <strong>be any colors</strong> but keep the rules <strong>consistent</strong>.";
+
+//label > link
+var labelLink =
+    "Labels can be in form of links and trigger an action. Make sure text in labels match the expected action.";
+
+/*-- Message --*/
+
+//message > main
+var messageColor =
+    "Based on the meaning of Hoiio's color pallette, messages in different colors has different purpose.";
+
+//message > normal
+var messageNormal =
+    "Normal messages are used for explainations and not-so-important updates.";
+
+//message > error
+var messageError =
+    "Error messages explain why an issue has error or require an urgent action to keep users' workflow proper.";
+
+//message > warning
+var messageWarning =
+    "When an issue is <strong>close to error state but does not require urgent action</strong>, display it in warning message.";
+
+//message > info
+var messageInfo =
+    "If an issue <strong>requires users to have certain knowledge before taking any actions</strong>, highlight it by information message. It will be much better if message has instructions.";
+
+//message > success
+var messageSuccess =
+    "Success messages are to <strong>ensure and inform users that tasks are completed successfully and properly</strong>. This color is usually used with popup message.";
+
+//message > type
+var messageType =
+    "There are <strong>only 3 message types</strong> that are used in different contexts.";
+
+//message > form
+var messageForm =
+    "Standard messages are used in most cases (expecially in forms and in page). They deliver information that related to a certain part.";
+
+//message > banner
+var messageBanner =
+    "Banner messages are used through pages and the described <strong>issues are global</strong>.";
+
+//message > popup
+var messagePopup =
+    "Popup messages are triggered to display <atrong>results of a completed task</strong>. Based on the messages dilivered, popup messages can contain action links.";
+
+//message > variation
+var messageVariation =
+    "";
+
+//message > icon
+var messageIcon =
+    "Message can have icons to specify the content inside.";
 
 $('[data-page="home"] #intro .tag-line').append(intro);
 $('[data-page="home"] #layout .tag-line').append(layout);
@@ -340,7 +429,10 @@ $('[data-page="home"] #styles .left.column .description').append(color);
 $('[data-page="home"] #styles .right.column .description').append(fonts);
 $('[data-page="home"] #components .tag-line').append(component);
 $('[data-page="home"] #pattern .tag-line').append(pattern);
+$('[data-page="home"] #download .tag-line').append(download);
+$('[data-page="home"] #download button + .tag-line').append(download_link_page);
 $('[data-page="home"] #subscribe .tag-line').append(subscribe);
+
 $('[data-page="pattern"] #content > .description').append(patternDescription);
 $('[data-page="layout"] #page > .description').append(typePage);
 $('[data-page="layout"] #card > .description').append(typeCard);
@@ -415,9 +507,33 @@ $('[data-page="input"] #input-single-line .description').append(inputSingleLine)
 $('[data-page="input"] #input-area .description').append(inputArea);
 $('[data-page="input"] #input-error .description').append(inputError);
 $('[data-page="input"] #input-variation .description').append(inputVariation);
-$('[data-page="input"] #input-icon .description').append(inputIcon);
-$('[data-page="input"] #input-icon-link .description').append(inputIconLink);
+$('[data-page="input"] #input-icon .title + .description').append(inputIcon);
+$('[data-page="input"] #input-icon .ui.grid + .description').append(inputIconLink);
 $('[data-page="input"] #input-labeled-text .description').append(inputLabeledText);
 $('[data-page="input"] #input-labeled-selection .description').append(inputLabeledSelection);
 $('[data-page="input"] #input-labeled-action .description').append(inputLabeledAction);
 $('[data-page="input"] #input-fluid .description').append(inputFluid);
+
+//Label
+$('[data-page="label"] #label-main .description').append(labelDescription);
+$('[data-page="label"] #label-default .description').append(labelColor);
+$('[data-page="label"] #label-usage .description').append(labelUsage);
+$('[data-page="label"] #label-variation .description').append(labelVariation);
+$('[data-page="label"] #label-dot .description').append(labelDot);
+$('[data-page="label"] #label-titlenumber .description').append(labelTitleNumber);
+$('[data-page="label"] #label-avatar .description').append(labelAvatar);
+$('[data-page="label"] #label-link .description').append(labelLink);
+
+//Message
+$('[data-page="message"] #mess-color .description').append(messageColor);
+$('[data-page="message"] #mess-normal .description').append(messageNormal);
+$('[data-page="message"] #mess-error .description').append(messageError);
+$('[data-page="message"] #mess-warning .description').append(messageWarning);
+$('[data-page="message"] #mess-info .description').append(messageInfo);
+$('[data-page="message"] #mess-success .description').append(messageSuccess);
+$('[data-page="message"] #mess-type .description').append(messageType);
+$('[data-page="message"] #mess-form .description').append(messageForm);
+$('[data-page="message"] #mess-banner .description').append(messageBanner);
+$('[data-page="message"] #mess-popup .description').append(messagePopup);
+$('[data-page="message"] #mess-variation .description').append(messageVariation);
+$('[data-page="message"] #mess-icon .description').append(messageIcon);

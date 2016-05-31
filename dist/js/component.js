@@ -93,6 +93,19 @@ $(document).ready(function () {
 
     $('.ui.rating')
         .rating();
+    
+    /*-------------
+        popup
+    --------------*/
+
+    $('.ui.icon.button')
+      .popup()
+    ;
+
+    $('.icon.link')
+      .popup()
+    ;
+
 
 
     // Page Info
@@ -165,13 +178,6 @@ $('.active a').click(function () {
 });
 
 
-/*-------------
-    popup
---------------*/
-
-$('.ui.icon.button')
-  .popup()
-;
 
 
 
