@@ -430,7 +430,6 @@ $('[data-page="home"] #styles .right.column .description').append(fonts);
 $('[data-page="home"] #components .tag-line').append(component);
 $('[data-page="home"] #pattern .tag-line').append(pattern);
 $('[data-page="home"] #download .tag-line').append(download);
-$('[data-page="home"] #download button + .tag-line').append(download_link_page);
 $('[data-page="home"] #subscribe .tag-line').append(subscribe);
 
 $('[data-page="pattern"] #content > .description').append(patternDescription);
